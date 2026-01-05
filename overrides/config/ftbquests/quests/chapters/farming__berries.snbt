@@ -30,7 +30,7 @@
 			tasks: [
 				{
 					id: "018D3F5CA945F0EC"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemon:mint_leaf)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "item_tag(cobblemon:mint_leaves)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 				{
