@@ -3,12 +3,12 @@
 	#A global factor that determines if a spawn attempt for a trainer is made.
 	# Default: 0.85
 	# Range: 0.0 ~ 1.0
-	globalSpawnChance = 0.5
+	globalSpawnChance = 0.6
 	#━━━━━━━━━━
 	#The interval in ticks at which a spawn attempt is made per player.
 	# Default: 180
 	# Range: 1 ~ 2147483646
-	spawnIntervalTicks = 300
+	spawnIntervalTicks = 250
 	#━━━━━━━━━━
 	#The max horizontal distance a trainer can spawn from players.
 	# Default: 70
@@ -117,7 +117,7 @@
 	#for the first trainer of a series (you may use 'relativeLevelCap' for that).
 	# Default: 15
 	# Range: 1 ~ 2147483646
-	initialLevelCap = 100
+	initialLevelCap = 35
 	#━━━━━━━━━━
 	#If enabled the level cap of a players will not prevent their pokemon from gaining experience and leveling up.
 	allowOverLeveling = false
@@ -167,3 +167,4 @@
 	# Default: 16
 	# Range: 0 ~ 2147483646
 	forceBattleMaxLevelDiff = 16
+
