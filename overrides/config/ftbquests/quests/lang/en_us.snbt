@@ -129,6 +129,12 @@
 	quest.4B54929993494AE1.quest_subtitle: "Defeat &d50x&r Cobblemon or Trainers"
 	quest.4B54929993494AE1.title: "Poké Gladiator"
 	quest.4BD6632DFCF9F496.quest_subtitle: "Catch &d50x&r Cobblemon"
+	quest.51288160F6FCC03F.quest_desc: [
+		"The Gym Compass points in the direction of a chosen  Gym Leader!"
+		""
+		"&eHint:&r Before you can battle a Gym Leader however, you must meet the right criteria!"
+	]
+	quest.51288160F6FCC03F.quest_subtitle: "Craft a &eGym Compass"
 	quest.521C904D81C4C47F.quest_subtitle: "Found in Chests"
 	quest.532FBFE98329A7D6.quest_desc: ["Use a &ePoke Ball&r and catch a Pokemon after battling them to reduce their  health low enough for capture!"]
 	quest.532FBFE98329A7D6.quest_subtitle: "Catch Your First Cobblemon!"
