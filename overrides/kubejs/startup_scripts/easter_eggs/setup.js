@@ -10,7 +10,7 @@ const $BenchedMove = Java.loadClass('com.cobblemon.mod.common.api.moves.BenchedM
 const $Moves = Java.loadClass('com.cobblemon.mod.common.api.moves.Moves').INSTANCE
 
 StartupEvents.postInit(event => {
-    $CobblemonEvents.POKEMON_NICKNAMED.subscribe($Priority.NORMAL, event => {
+    $CobblemonEvents.POKEMON_NICKNAMED["subscribe(com.cobblemon.mod.common.api.Priority,java.util.function.Consumer)"]($Priority.NORMAL, event => {
         global.handleNicknameEasterEggs(event)
     })
 })
