@@ -1,0 +1,23 @@
+{
+  "type": "crafting_shaped",
+  "group": "tools",
+  "pattern": [
+    "WSW",
+    "SCS",
+    "WSW"
+  ],
+  "key": {
+    "W": {
+      "item": "cobblemon:poke_ball"
+    },
+    "S":{
+      "item": "cobblemon:tumblestone"
+    },
+    "C":{
+      "item": "minecraft:compass"
+    }
+  },
+  "result": {
+    "id": "explorerscompass:explorerscompass"
+  }
+}
