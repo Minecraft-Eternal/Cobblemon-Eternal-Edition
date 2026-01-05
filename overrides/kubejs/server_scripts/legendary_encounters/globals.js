@@ -247,14 +247,14 @@ ServerEvents.commandRegistry(event => {
     //Debug command for testing Regi encounters
     // sets all Regi Encounters use the puzzles at the specified position in the switch statement.
     // designed for testing modifications to any of the puzzles quickly.
-    // ex: '/setregipuzzles 3' will force all Regi puzzles to use the 3rd condition.
+    // ex: '/setregipuzzles 2' will force all Regi puzzles to use the 3rd condition.
     event.register(
         Commands.literal('setregipuzzles')
             .requires(source => source.hasPermission(2))
             .then(Commands.argument('puzzle_index', Arguments.INTEGER.create(event))
                 .executes(ctx => {
                     let index = Arguments.INTEGER.getResult(ctx, 'puzzle_index')
-                    if(index > global.totalRegiPuzzles || index < 1) {
+                    if(index > global.totalRegiPuzzles || index < 0) {
                         ctx.source.player.tell(Text.translate('message.cobblemoneternal.command.set_regi_puzzles.oob', index, global.totalRegiPuzzles))
                         return 0
                     }

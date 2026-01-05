@@ -19,9 +19,9 @@ const regiIndexError = (regi, index) => {
 
 
 
-//Determines how many Regi Puzzles exist for each Regi
+//Determines how many more Regi Puzzles exist for each Regi
 // tampering is unadvised and will lead to errors with improper use.
-global.totalRegiPuzzles = 5
+global.totalRegiPuzzles = 4
 
 const regularRegis = ["rock", "ice", "steel", "eleki", "drago"]
 
@@ -79,13 +79,16 @@ global.loadRegis = () => {
 
                 console.log(`Puzzle for rock: ${global.regiPuzzleIndex['rock']}`)
                 switch (global.regiPuzzleIndex["rock"]) {
-                    case 1:
+                    case 0: // 150+ DEF mon with Sandstorm
                         global.partyOf(player).forEach(pokemon => {
-                            console.log(`DEF stat of ${pokemon.getDisplayName()}: ${pokemon.getDefence()}`)
+                            console.log(`DEF stat of ${pokemon.getDisplayName(true)}: ${pokemon.getDefence()}`)
                             if(pokemon.getDefence() >= 150
                                 && pokemon.moveSet.getMoves().stream().anyMatch(move => move.name == 'sandstorm'))
                                 passes = true
                         })
+                        break;
+                    case 1:
+                        // TODO
                         break;
                     case 2:
                         // TODO
@@ -94,9 +97,6 @@ global.loadRegis = () => {
                         // TODO
                         break;
                     case 4:
-                        // TODO
-                        break;
-                    case 5:
                         // TODO
                         break;
                     default: 
@@ -149,13 +149,16 @@ global.loadRegis = () => {
 
                 console.log(global.regiPuzzleIndex['ice'])
                 switch (global.regiPuzzleIndex['ice']) {
-                    case 1:
+                    case 0:
                         global.partyOf(player).forEach(pokemon => {
-                            console.log(`Ice Shrine result ${pokemon.getDisplayName()}: ${pokemon.species.nationalPokedexNumber}, ${pokemon.ability.name}`)
+                            console.log(`Ice Shrine result ${pokemon.getDisplayName(true)}: ${pokemon.species.nationalPokedexNumber}, ${pokemon.ability.name}`)
                             if(pokemon.species.nationalPokedexNumber == 584
                                 && pokemon.ability.name == 'snowwarning')
                                 passes = true
                         })
+                        break;
+                    case 1:
+
                         break;
                     case 2:
 
@@ -164,9 +167,6 @@ global.loadRegis = () => {
 
                         break;
                     case 4:
-
-                        break;
-                    case 5:
 
                         break;
                     default: 
@@ -219,27 +219,27 @@ global.loadRegis = () => {
 
                 console.log(global.regiPuzzleIndex['steel'])
                 switch (global.regiPuzzleIndex['steel']) {
-                    case 1:
+                    case 0:
                         global.partyOf(player).forEach(pokemon => {
-                            console.log(`Weight of ${pokemon.getDisplayName()}: ${pokemon.form.weight}`)
+                            console.log(`Weight of ${pokemon.getDisplayName(true)}: ${pokemon.form.weight}`)
                             if((pokemon.form.weight * weightModifier(pokemon)) >= 2500) //250.0kg
                                 passes = true
                         })
                         break;
-                    case 2:
+                    case 1:
                         global.partyOf(player).forEach(pokemon => {
                             if(pokemon.shiny)
                                 passes = true
                         })
+                        break;
+                    case 2:
+                        // TODO
                         break;
                     case 3:
                         // TODO
                         break;
                     case 4:
                         // TODO
-                        break;
-                    case 5:
-                        // NEEDS IDEA
                         break;
                     default: 
                         throw regiIndexError('steel');
@@ -362,12 +362,15 @@ global.loadRegis = () => {
 
                 console.log(global.regiPuzzleIndex['eleki'])
                 switch (global.regiPuzzleIndex['eleki']) {
-                    case 1:
+                    case 0:
                         global.partyOf(player).forEach(pokemon => {
                             if(pokemon.species.nationalPokedexNumber == 310
                                     && pokemon.heldItem.id == 'cobblemon:cell_battery')
                                 passes = true
                         })
+                        break;
+                    case 1:
+                        // TODO
                         break;
                     case 2:
                         // TODO
@@ -376,9 +379,6 @@ global.loadRegis = () => {
                         // TODO
                         break;
                     case 4:
-                        // TODO
-                        break;
-                    case 5:
                         // TODO
                         break;
                     default: 
@@ -431,7 +431,7 @@ global.loadRegis = () => {
 
                 console.log(global.regiPuzzleIndex['drago'])
                 switch (global.regiPuzzleIndex['drago']) {
-                    case 1: // Pseudo-Legendary with Draco Meteor
+                    case 0: // Pseudo-Legendary with Draco Meteor
                         global.partyOf(player).forEach(pokemon => {
                             console.log(pokemon.form.labels)
                             if(pokemon.form.labels.contains('powerhouse')
@@ -439,7 +439,7 @@ global.loadRegis = () => {
                                 passes = true
                         })
                         break;
-                    case 2: // 4+ Dragon-type pokemon
+                    case 1: // 4+ Dragon-type pokemon
                         let dragons = 0
                         global.partyOf(player).forEach(pokemon => {
                             if(pokemon.form.types.stream().anyMatch(type => type.name == 'dragon'))
@@ -448,13 +448,13 @@ global.loadRegis = () => {
                         if(dragons >= 4)
                             passes = true
                         break;
+                    case 2:
+                        // TODO
+                        break;
                     case 3:
                         // TODO
                         break;
                     case 4:
-                        // TODO
-                        break;
-                    case 5:
                         // TODO
                         break;
                     default: 
