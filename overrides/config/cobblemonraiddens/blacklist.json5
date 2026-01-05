@@ -1,0 +1,42 @@
+{
+	// List of blacklisted Pokemon in raid battles.
+	"pokemon": [],
+	// List of blacklisted abilities in raid battles
+	"abilities": [
+		"wonderguard"
+	],
+	// List of blacklisted moves in raid battles.
+	"moves": [
+		"bestow",
+		"circlethrow",
+		"destinybond",
+		"disable",
+		"encore",
+		"endeavor",
+		"entrainment",
+		"fissure",
+		"guardsplit",
+		"guillotine",
+		"horndrill",
+		"imprison",
+		"instruct",
+		"naturesmadness",
+		"painsplit",
+		"perishsong",
+		"powersplit",
+		"roar",
+		"ruination",
+		"sheercold",
+		"simplebeam",
+		"skillswap",
+		"skydrop",
+		"superfang",
+		"taunt",
+		"torment",
+		"trick",
+		"whirlwind",
+		"worryseed"
+	],
+	// List of blacklisted commands in raids.
+	"commands": []
+}
