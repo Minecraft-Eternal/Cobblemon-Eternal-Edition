@@ -13,8 +13,9 @@
 	order_index: 7
 	rewards: [{
 		command: "/pokespawn aerodactyl level=30 "
-		elevate_perms: true
 		feedback_message: "Special Encounter"
+		id: "586E9230739715EF"
+		permission_level: 2
 		silent: true
 		type: "command"
 	}]

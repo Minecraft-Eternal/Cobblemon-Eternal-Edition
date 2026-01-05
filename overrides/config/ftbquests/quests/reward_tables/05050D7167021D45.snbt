@@ -3,20 +3,20 @@
 	loot_size: 1
 	order_index: 5
 	rewards: [
-		{ item: { count: 1, id: "cobblemon:helix_fossil" } }
-		{ item: { count: 1, id: "cobblemon:dome_fossil" } }
-		{ item: { count: 1, id: "cobblemon:old_amber_fossil" } }
-		{ item: { count: 1, id: "cobblemon:root_fossil" } }
-		{ item: { count: 1, id: "cobblemon:claw_fossil" } }
-		{ item: { count: 1, id: "cobblemon:skull_fossil" } }
-		{ item: { count: 1, id: "cobblemon:armor_fossil" } }
-		{ item: { count: 1, id: "cobblemon:cover_fossil" } }
-		{ item: { count: 1, id: "cobblemon:plume_fossil" } }
-		{ item: { count: 1, id: "cobblemon:jaw_fossil" } }
-		{ item: { count: 1, id: "cobblemon:sail_fossil" } }
-		{ item: { count: 1, id: "cobblemon:fossilized_bird" } }
-		{ item: { count: 1, id: "cobblemon:fossilized_fish" } }
-		{ item: { count: 1, id: "cobblemon:fossilized_drake" } }
-		{ item: { count: 1, id: "cobblemon:fossilized_dino" } }
+		{ id: "3E3963394C64F13D", item: { count: 1, id: "cobblemon:helix_fossil" } }
+		{ id: "56DBD070BB1AAB12", item: { count: 1, id: "cobblemon:dome_fossil" } }
+		{ id: "1F7E97838BD19CCE", item: { count: 1, id: "cobblemon:old_amber_fossil" } }
+		{ id: "17943E1764DCC4BC", item: { count: 1, id: "cobblemon:root_fossil" } }
+		{ id: "7B91F01B5BC27E58", item: { count: 1, id: "cobblemon:claw_fossil" } }
+		{ id: "4C8466EF870613D3", item: { count: 1, id: "cobblemon:skull_fossil" } }
+		{ id: "57B2BB5C19E9C84C", item: { count: 1, id: "cobblemon:armor_fossil" } }
+		{ id: "4FF239E28B9CC076", item: { count: 1, id: "cobblemon:cover_fossil" } }
+		{ id: "036FF7B1FBBF21C2", item: { count: 1, id: "cobblemon:plume_fossil" } }
+		{ id: "5B32EF66D3B99763", item: { count: 1, id: "cobblemon:jaw_fossil" } }
+		{ id: "4791DF1AC2798426", item: { count: 1, id: "cobblemon:sail_fossil" } }
+		{ id: "42048D60296DEA4F", item: { count: 1, id: "cobblemon:fossilized_bird" } }
+		{ id: "4BB2E4830803D718", item: { count: 1, id: "cobblemon:fossilized_fish" } }
+		{ id: "41DE9D0DDC19EDE2", item: { count: 1, id: "cobblemon:fossilized_drake" } }
+		{ id: "1E7EC6C1E14531AE", item: { count: 1, id: "cobblemon:fossilized_dino" } }
 	]
 }

@@ -3,8 +3,8 @@
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{ item: { count: 1, id: "cobblemon:friend_ball" } }
-		{ item: { count: 1, id: "cobblemon:revive" } }
-		{ item: { count: 1, id: "cobblemon:potion" } }
+		{ id: "032425E674FA2CC1", item: { count: 1, id: "cobblemon:friend_ball" } }
+		{ id: "305429ACD34B31F3", item: { count: 1, id: "cobblemon:revive" } }
+		{ id: "58802039E79A88A8", item: { count: 1, id: "cobblemon:potion" } }
 	]
 }

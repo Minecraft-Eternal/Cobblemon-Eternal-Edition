@@ -16,31 +16,31 @@
 	rewards: [
 		{
 			command: "/pokespawn snorlax level=20 nickname=Gob"
-			elevate_perms: true
-			feedback_message: ""
 			icon: {
 				id: "supplementaries:flute"
 			}
+			id: "7154E779BCDE64DC"
+			permission_level: 2
 			silent: true
 			type: "command"
 		}
 		{
 			command: "/pokespawn snorlax level=20 nickname=Snee"
-			elevate_perms: true
-			feedback_message: ""
 			icon: {
 				id: "supplementaries:flute"
 			}
+			id: "77AA252F2B0377B6"
+			permission_level: 2
 			silent: true
 			type: "command"
 		}
 		{
 			command: "/pokespawn snorlax level=25 shiny nickname=Mimi"
-			elevate_perms: true
-			feedback_message: ""
 			icon: {
 				id: "supplementaries:flute"
 			}
+			id: "58F010614D8DF69D"
+			permission_level: 2
 			silent: true
 			type: "command"
 		}

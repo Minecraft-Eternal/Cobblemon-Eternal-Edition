@@ -12,28 +12,27 @@
 	loot_size: 1
 	order_index: 1
 	rewards: [
-		{ item: { count: 1, id: "simpletms:tm_absorb" } }
-		{ item: { count: 1, id: "simpletms:tm_acid" } }
-		{ item: { count: 1, id: "simpletms:tm_amnesia" } }
-		{ item: { count: 1, id: "simpletms:tm_aurorabeam" } }
-		{ item: { count: 1, id: "simpletms:tm_bounce" } }
-		{ item: { count: 1, id: "simpletms:tm_bulldoze" } }
-		{ item: { count: 1, id: "simpletms:tm_aerialace" } }
-		{ item: { count: 1, id: "simpletms:tm_brickbreak" } }
-		{ item: { count: 1, id: "simpletms:tm_waterpulse" } }
-		{ item: { count: 1, id: "simpletms:tm_confusion" } }
-		{ item: { count: 1, id: "simpletms:tm_earthquake" } }
-		{ item: { count: 1, id: "simpletms:tm_bulletseed" } }
-		{ item: { count: 1, id: "simpletms:tm_vcreate" } }
-		{ item: { count: 1, id: "simpletms:tm_poisonpowder" } }
-		{ item: { count: 1, id: "simpletms:tm_avalanche" } }
-		{ item: { count: 1, id: "simpletms:tm_aromatherapy" } }
-		{ item: { count: 1, id: "simpletms:tm_bubblebeam" } }
-		{ item: { count: 1, id: "simpletms:tm_thunderwave" } }
-		{ item: { count: 1, id: "simpletms:tm_thunderpunch" } }
-		{ item: { count: 1, id: "simpletms:tm_icepunch" } }
-		{ item: { count: 1, id: "simpletms:tm_focuspunch" } }
-		{ item: { count: 1, id: "simpletms:tm_megapunch" } }
-		{ item: { count: 1, id: "simpletms:tm_suckerpunch" } }
+		{ id: "2DCBB8767B55F242", item: { count: 1, id: "simpletms:tm_absorb" } }
+		{ id: "7C10766FC3458DC6", item: { count: 1, id: "simpletms:tm_acid" } }
+		{ id: "52AA395A2AE145C1", item: { count: 1, id: "simpletms:tm_amnesia" } }
+		{ id: "100D70DA6B5479F1", item: { count: 1, id: "simpletms:tm_aurorabeam" } }
+		{ id: "36EE6C70D45F0D12", item: { count: 1, id: "simpletms:tm_bounce" } }
+		{ id: "12AA054CCFF8285A", item: { count: 1, id: "simpletms:tm_bulldoze" } }
+		{ id: "135B529DC6C5471C", item: { count: 1, id: "simpletms:tm_aerialace" } }
+		{ id: "074F8CD9047D453E", item: { count: 1, id: "simpletms:tm_brickbreak" } }
+		{ id: "7DBDC7002F45CB60", item: { count: 1, id: "simpletms:tm_waterpulse" } }
+		{ id: "39F825A781F6BF65", item: { count: 1, id: "simpletms:tm_confusion" } }
+		{ id: "1E3C8477B3ABE2C5", item: { count: 1, id: "simpletms:tm_earthquake" } }
+		{ id: "16E126ADCA1AFF27", item: { count: 1, id: "simpletms:tm_bulletseed" } }
+		{ id: "4FEDFD5144B12683", item: { count: 1, id: "simpletms:tm_poisonpowder" } }
+		{ id: "3141FAA16BD93013", item: { count: 1, id: "simpletms:tm_avalanche" } }
+		{ id: "314712F553F38750", item: { count: 1, id: "simpletms:tm_aromatherapy" } }
+		{ id: "08167793567CE0CD", item: { count: 1, id: "simpletms:tm_bubblebeam" } }
+		{ id: "753C00FDB477F2C2", item: { count: 1, id: "simpletms:tm_thunderwave" } }
+		{ id: "1E0416307D70723B", item: { count: 1, id: "simpletms:tm_thunderpunch" } }
+		{ id: "74E845E90EE7A2D2", item: { count: 1, id: "simpletms:tm_icepunch" } }
+		{ id: "2E71F6161CAC2534", item: { count: 1, id: "simpletms:tm_focuspunch" } }
+		{ id: "1849DFA7FCDA6938", item: { count: 1, id: "simpletms:tm_megapunch" } }
+		{ id: "6828C5D56928041C", item: { count: 1, id: "simpletms:tm_suckerpunch" } }
 	]
 }
