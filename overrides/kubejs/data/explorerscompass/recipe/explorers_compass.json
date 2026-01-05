@@ -8,7 +8,7 @@
   ],
   "key": {
     "W": {
-      "item": "cobblemon:poke_ball"
+      "item": "cobblemon:verdant_ball"
     },
     "S":{
       "item": "cobblemon:tumblestone"
@@ -20,4 +20,5 @@
   "result": {
     "id": "explorerscompass:explorerscompass"
   }
+
 }
