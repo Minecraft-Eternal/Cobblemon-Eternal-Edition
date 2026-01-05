@@ -1,61 +1,169 @@
 [Spawning]
+	#━━━━━━━━━━
 	#A global factor that determines if a spawn attempt for a trainer is made.
 	# Default: 0.85
 	# Range: 0.0 ~ 1.0
 	globalSpawnChance = 0.5
+	#━━━━━━━━━━
 	#The interval in ticks at which a spawn attempt is made per player.
-	# Default: 120
+	# Default: 180
 	# Range: 1 ~ 2147483646
-	spawnIntervalTicks = 8000
+	spawnIntervalTicks = 300
+	#━━━━━━━━━━
 	#The max horizontal distance a trainer can spawn from players.
 	# Default: 70
 	# Range: 1 ~ 2147483646
 	maxHorizontalDistanceToPlayers = 70
+	#━━━━━━━━━━
 	#The min horizontal distance a trainer can spawn from players.
 	# Default: 25
 	# Range: 1 ~ 2147483646
 	minHorizontalDistanceToPlayers = 25
+	#━━━━━━━━━━
 	#The max vertical distance a trainer can spawn from players.
 	# Default: 30
 	# Range: 1 ~ 2147483646
 	maxVerticalDistanceToPlayers = 30
+	#━━━━━━━━━━
 	#Spawn cap of trainers per player.
 	# Default: 12
 	# Range: 0 ~ 2147483646
 	maxTrainersPerPlayer = 8
-	#Total trainer spawn cap. This value may be increased for servers with higher expected player numbers (> 4), for example (|players| + 1)*maxTrainersPerPlayer.
+	#━━━━━━━━━━
+	#Total trainer spawn cap. This value may be increased for servers with higher expected
+	#player numbers (> 4), for example (|players| + 1)*maxTrainersPerPlayer.
 	# Default: 60
 	# Range: 0 ~ 2147483646
 	maxTrainersTotal = 24
-	#The maximum level difference between the strongest pokemon in the team of a player and the strongest pokemon in the team of a trainer to spawn for that player. The spawn weight decreases with a higher level difference. Trainers with pokemon above the level cap of a player are excluded.
+	#━━━━━━━━━━
+	#The maximum level difference between the strongest pokemon in the team of a
+	#player (at or below that players level cap) and the strongest pokemon in the
+	#team of a trainer to allow that trainer to spawn for the player.
+	#
+	#This value will scale linearly with a players level relative to 100 but will
+	#not go below 4 (unless explicitely set to a lower value). An exception to this
+	#are key trainers, who may always spawn with a level difference up to the
+	#configured value.
+	#
+	#For example with player Level = 20 and maxLevelDiff = 25:
+	#result = max(4, (20/100) * 25) = max(4, 5) = 5
+	#
+	#The spawn weight decreases with a higher level difference.
 	# Default: 25
 	# Range: 0 ~ 100
 	maxLevelDiff = 25
-	#A comma separated list of biome tags (e.g. ["is_overworld", "is_forest"]). A biome may not have any of the given tags attached to it, for a trainer to spawn in that biome. Trainers may also have additional tags defined by a data pack.
+	#━━━━━━━━━━
+	#A comma separated list of biome tags (e.g. ["is_overworld", "is_forest"]).
+	#A biome may not have any of the given tags attached to it, for a trainer to spawn in that biome.
+	#Trainers may also have additional tags defined by a data pack.
 	biomeTagBlacklist = []
-	#A comma separated list of biome tags (e.g. ["is_overworld", "is_forest"]). A biome must have atleast one of the given tags attached to it, for a trainer to spawn in that biome (unless the list is empty). Trainers may also have additional tags defined by a data pack.
+	#━━━━━━━━━━
+	#A comma separated list of biome tags (e.g. ["is_overworld", "is_forest"]).
+	#A biome must have atleast one of the given tags attached to it, for a trainer to spawn in that
+	#biome (unless the list is empty). Trainers may also have additional tags defined by a data pack.
 	biomeTagWhitelist = []
-	#A list of items that can be used to configure a trainer spawner to spawn specific trainers. Every entry must define an item followed by a space seperated list of trainer ids (of which one will be randomly chosen to spawn).
-	trainerSpawnerItems = ["cobblemon:twisted_spoon leader_sabrina_01a4", "cobblemon:choice_scarf trainer_brendan_001a", "cobblemon:utility_umbrella rocket_admin_ariana_0044", "cobblemon:covert_cloak rocket_admin_archer_0043", "cobblemon:charcoal_stick leader_blaine_01a3", "cobblemon:black_sludge rocket_admin_archer_ariana_m000", "minecraft:gold_nugget rival_terry_014c rival_terry_014d rival_terry_014e", "cobblemon:soothe_bell rival_terry_01b0 rival_terry_01b1 rival_terry_01b2", "cobblemon:black_tumblestone rocket_admin_archer_002e", "cobblemon:dragon_scale leader_clair_004a", "cobblemon:poison_barb leader_koga_01a2", "cobblemon:lucky_egg rival_terry_01b3 rival_terry_01b4 rival_terry_01b5", "cobblemon:vivichoke trainer_may_003d", "cobblemon:expert_belt trainer_brendan_0039", "cobblemon:destiny_knot boss_giovanni_0045", "cobblemon:life_orb champion_terry_01b6 champion_terry_01b7 champion_terry_01b8", "cobblemon:hard_stone leader_brock_019e", "cobblemon:focus_band elite_four_bruno_0050 elite_four_bruno_0051", "cobblemon:dragon_fang elite_four_lance_0056 elite_four_lance_0057", "cobblemon:silk_scarf trainer_brendan_0032", "cobblemon:magnet leader_lt_surge_01a0", "cobblemon:cleanse_tag elite_four_agatha_0053 elite_four_agatha_0054", "cobblemon:miracle_seed leader_erika_01a1", "cobblemon:dubious_disc boss_giovanni_015d", "cobblemon:mystic_water leader_misty_019f", "cobblemon:never_melt_ice elite_four_lorelei_004d elite_four_lorelei_004e", "cobblemon:upgrade boss_giovanni_015c"]
-	#The chance for a trainer to spawn will shrink towards this value based of how many trainers are already spawned in for a player. For example if a player has 0 trainers spawned for them the chance will be as configured by globalSpawnChance, if a player has barely filled up their spawn cap (maxTrainersPerPlayer), i.e. only one more free spot is left, the chance for the last trainer will be as configured by globalSpawnChanceMinimum. Set to any value equal to or above globalSpawnChance to disable (e.g. 1.0).
-	# Default: 0.15
+	#━━━━━━━━━━
+	#The chance for a trainer to spawn will shrink towards this value based of how many
+	#trainers are already spawned in for a player. For example if a player has 0 trainers
+	#spawned for them the chance will be as configured by globalSpawnChance, if a player
+	#has barely filled up their spawn cap (maxTrainersPerPlayer), i.e. only one more free
+	#spot is left, the chance for the last trainer will be as configured by globalSpawnChanceMinimum.
+	#Set to any value equal to or above globalSpawnChance to disable (e.g. 1.0).
+	# Default: 0.1
 	# Range: 0.0 ~ 1.0
 	globalSpawnChanceMinimum = 0.15
-	#The spawn interval ticks will grow towards this value based of how many trainers are already spawned in for a player. For example if a player has 0 trainers spawned for them the spawn interval ticks will be as configured by spawnIntervalTicks, if a player has barely filled up their spawn cap (maxTrainersPerPlayer), i.e. only one more free spot is left, the spawn interval for the last trainer will be as configured by spawnIntervalTicksMaximum. Set to any value equal to or below spawnIntervalTicks to disable (e.g. 0).
-	# Default: 1200
+	#━━━━━━━━━━
+	#The spawn interval ticks will grow towards this value based of how many trainers are already
+	#spawned in for a player. For example if a player has 0 trainers spawned for them the spawn
+	#interval ticks will be as configured by spawnIntervalTicks, if a player has barely filled up their
+	#spawn cap (maxTrainersPerPlayer), i.e. only one more free spot is left, the spawn interval for the
+	#last trainer will be as configured by spawnIntervalTicksMaximum. Set to any value equal to or below
+	#spawnIntervalTicks to disable (e.g. 0).
+	# Default: 2400
 	# Range: 0 ~ 2147483646
 	spawnIntervalTicksMaximum = 1200
+	#━━━━━━━━━━
+	#(Non persistent) trainers will despawn if they have no line of sight to any player for the configured amount of ticks.
+	#Set to a negative value to disable this feature (trainers may only despawn if they chunk becomes unloaded in that case).
+	despawnTicksIfUnseen = 6000
+	#━━━━━━━━━━
+	#By default, this mod prevents the spawning of a trainer if another entity with the same identity
+	#already exists anywhere in the world (in any dimension). However, if this is set to a positive value,
+	#the mod will check for the existence of a trainer with the same identity within the specified radius instead.
+	uniqueTrainerRadius = 500
+	#━━━━━━━━━━
+	#If enabled trainers will only spawn naturally around players that have a trainer card
+	#in their inventory (does not affect trainer spawners).
+	spawningRequiresTrainerCard = false
+	#━━━━━━━━━━
+	#If enabled a single trainer association npc may spawn naturally nearby players that carry a trainer
+	#card and have either not started a series or completed their current series. One may also spawn nearby
+	#any player in proximity to a village (at least 3 occupied beds and a village center). These can
+	#spawn everywhere but will respect the 'dimensionBlacklist' and 'dimensionWhitelist' settings.
+	spawnTrainerAssociation = true
+	#━━━━━━━━━━
+	#A comma separated list of dimensions (e.g. ["multiworld:spawn", "minecraft:the_end"]).
+	#In these dimensions trainers will never spawn.
+	dimensionBlacklist = []
+	#━━━━━━━━━━
+	#A comma separated list of dimensions (e.g. ["multiworld:spawn" , "minecraft:the_end"]).
+	#Trainers may only spawn in these dimensions (unless the list is empty).
+	dimensionWhitelist = []
 
 [Players]
-	#Initial level cap of players. Pokemon will not gain any experience if at or above the level cap.
+	#━━━━━━━━━━
+	#Initial level cap of players. Pokemon will not gain any experience if at or
+	#above the level cap. This value will be capped to not go below the level cap
+	#for the first trainer of a series (you may use 'relativeLevelCap' for that).
 	# Default: 15
-	# Range: 1 ~ 100
+	# Range: 1 ~ 2147483646
 	initialLevelCap = 100
-	#The required level cap for trainers is based of the strongest pokemon in their team. This value will be added to the derived level cap. Example: A trainer with a Pikachu at level 50 has a level cap requirement of 50. If the additiveLevelCapRequirement is `-10` the required level cap of that trainer becomes 40, if it is `10` the level cap requirement becomes `60`. Set to `-100` (or lower) to disable all level cap requirements.
-	additiveLevelCapRequirement = 0
-	#If enabled the level cap of a players will not prevent their pokemon from gaining experience and leveling up. Trainers will still refuse to battle players that carry pokemon above their level cap!
+	#━━━━━━━━━━
+	#If enabled the level cap of a players will not prevent their pokemon from gaining experience and leveling up.
 	allowOverLeveling = false
+	#━━━━━━━━━━
+	#The level cap of a player is based of the strongest pokemon from the party of their next
+	#required trainer in a series. The relativeLevelCap is added to the resulting value. For
+	#instance if the next trainer for a player has a Pikachu at level 50, that players level
+	#cap will be 50 + relativeLevelCap (can be negative).
+	relativeLevelCap = 0
+	#━━━━━━━━━━
+	#The initial series players are placed in when entering a world for the first time. Apart from any series id
+	#this value may also be set to one of the special series ids "empty" (i.e. no series) or "freeroam".
+	#Note that when setting the initial series to "freeroam" it is usually a good idea to also disable
+	#'freeroamRequiresCompletedSeries'.
+	initialSeries = "empty"
+	#━━━━━━━━━━
+	#The freeroam series will grant a level cap of 100 and allows players to pause the progression of their
+	#current series. If this option is enabled, players must have completed any other series first to gain
+	#access to the trade at the trainer association.
+	freeroamRequiresCompletedSeries = true
 
 [Debug]
+	#━━━━━━━━━━
 	#If enabled additional information are printed to the log whenever a trainer spawns or despawns.
 	logSpawning = true
+
+[Trainers]
+	#━━━━━━━━━━
+	#Determines if trainers may force players into a battle if they look at each other for
+	#a certain amount if time.
+	forceBattleOnSight = true
+	#━━━━━━━━━━
+	#Max distance in blocks at which trainers may start a battle on sight.
+	# Default: 8.0
+	# Range: 0.0 ~ 32.0
+	forceBattleMaxDistance = 6.0
+	#━━━━━━━━━━
+	#Number of ticks a trainer and player need to stare at each other to initiate a battle.
+	#Setting this to a very large number effectively disables this features but trainers
+	#will behave slightly different.
+	# Default: 60
+	# Range: 0 ~ 2147483646
+	forceBattleLookTicks = 60
+	#━━━━━━━━━━
+	#Maximum level difference between the strongest pokemon of a trainer and a player to
+	#allow the trainer to force a battle.
+	# Default: 16
+	# Range: 0 ~ 2147483646
+	forceBattleMaxLevelDiff = 16
