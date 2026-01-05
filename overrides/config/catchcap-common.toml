@@ -1,0 +1,8 @@
+#The amount of levels a pokemon should be allowed to be above the party's highest level
+# Default: 5
+# Range: 0 ~ 100
+catchVariance = 5
+#Whether creative mode should allow players to bypass the catch cap
+creativeBypass = true
+#Whether the player's thrown ball should be returned on a failed capture
+returnBalls = true
