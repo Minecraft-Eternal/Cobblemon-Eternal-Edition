@@ -5,12 +5,12 @@
 	group: ""
 	id: "1DF598887604D25D"
 	images: [{
-		height: 2.0d
-		image: "cobblemon:item/advancements/cobblemon_logo_purple"
+		height: 2.7d
+		image: "kubejs:textures/cobblemon_eternal_title.png"
 		rotation: 0.0d
-		width: 2.0d
-		x: 1.959956709956728d
-		y: -0.848639455782358d
+		width: 9.0d
+		x: 2.0d
+		y: -1.0d
 	}]
 	order_index: 0
 	quest_links: [ ]
@@ -286,12 +286,11 @@
 				{
 					auto: "invisible"
 					command: "/execute at @p run rctmod trainer summon leader_brock_0038 ~5 ~ ~"
-					elevate_perms: true
-					feedback_message: ""
 					icon: {
 						id: "ftbquests:book"
 					}
 					id: "0019487E9BA5725C"
+					permission_level: 2
 					silent: true
 					type: "command"
 				}
@@ -350,12 +349,11 @@
 				{
 					auto: "enabled"
 					command: "/execute at @p run rctmod trainer summon twins_eli_and_anne_0215 ~5 ~ ~"
-					elevate_perms: true
-					feedback_message: ""
 					icon: {
 						id: "ftbquests:book"
 					}
 					id: "61A8C285937952F7"
+					permission_level: 2
 					silent: true
 					type: "command"
 				}
@@ -421,24 +419,22 @@
 				{
 					auto: "invisible"
 					command: "/gamerule mobTargetInBattle false"
-					elevate_perms: true
-					feedback_message: ""
 					icon: {
 						id: "ftbquests:book"
 					}
 					id: "21AC6846D373FCE8"
+					permission_level: 2
 					silent: true
 					type: "command"
 				}
 				{
 					auto: "invisible"
 					command: "/execute at @p run rctmod trainer summon team_rocket_grunt_015f ~5 ~ ~"
-					elevate_perms: true
-					feedback_message: ""
 					icon: {
 						id: "ftbquests:book"
 					}
 					id: "163A6CB8F046F7B8"
+					permission_level: 2
 					silent: true
 					type: "command"
 				}
@@ -619,12 +615,11 @@
 				}
 				{
 					command: "/cobbledollars give @p 100"
-					elevate_perms: true
-					feedback_message: ""
 					icon: {
 						id: "cobble_contests:contest_card"
 					}
 					id: "3CE2CD054F14D962"
+					permission_level: 2
 					type: "command"
 				}
 				{
@@ -948,12 +943,11 @@
 				{
 					auto: "invisible"
 					command: "/execute at @p run rctmod trainer summon team_rocket_admin_0220 ~7 ~ ~"
-					elevate_perms: true
-					feedback_message: ""
 					icon: {
 						id: "badgebox:poison_badge"
 					}
 					id: "6837BCBB4D56FF46"
+					permission_level: 2
 					silent: true
 					type: "command"
 				}
@@ -1065,10 +1059,14 @@
 				action: "catch"
 				amount: 10L
 				biome: ""
+				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
 				id: "3DA23BFEA2CDD1E9"
+				max_level: 0
+				min_level: 0
+				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
@@ -1115,10 +1113,14 @@
 				action: "catch"
 				amount: 50L
 				biome: ""
+				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
 				id: "489BD304A4EC94D6"
+				max_level: 0
+				min_level: 0
+				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
@@ -1164,10 +1166,14 @@
 				action: "defeat"
 				amount: 10L
 				biome: ""
+				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
 				id: "43D0F17E5BF32F2E"
+				max_level: 0
+				min_level: 0
+				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
@@ -1223,10 +1229,14 @@
 				action: "defeat"
 				amount: 50L
 				biome: ""
+				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
 				id: "3D558D8609A2B264"
+				max_level: 0
+				min_level: 0
+				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
@@ -1401,10 +1411,14 @@
 				action: "evolve"
 				amount: 1L
 				biome: ""
+				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
 				id: "75D35550F26E6056"
+				max_level: 0
+				min_level: 0
+				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
@@ -1425,7 +1439,6 @@
 			optional: true
 			rewards: [{
 				command: "/loot give @p loot cobblemoneternal:quest/village_map"
-				feedback_message: ""
 				icon: {
 					id: "minecraft:filled_map"
 				}
@@ -1437,11 +1450,37 @@
 				consume_items: true
 				count: 4L
 				id: "34852A19D0EBA5B3"
-				item: { count: 4, id: "minecraft:diamond" }
+				item: { count: 1, id: "minecraft:diamond" }
 				type: "item"
 			}]
 			x: -2.5d
 			y: 3.5d
+		}
+		{
+			id: "51288160F6FCC03F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "092DDBA5A37C2B54"
+					table_id: 7892144193402168857L
+					type: "random"
+				}
+				{
+					id: "70D384B126A65BAA"
+					item: {
+						count: 1
+						id: "simpletms:machine_tm"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "70E05B56C53BE036"
+				item: { count: 1, id: "explorerscompass:explorerscompass" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.5d
 		}
 	]
 }
