@@ -1,0 +1,17 @@
+{
+  "type": "cobblemoneternal:dungeons",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:the_void",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "height": 1,
+          "block": "minecraft:barrier"
+        }
+      ]
+    }
+  }
+}
