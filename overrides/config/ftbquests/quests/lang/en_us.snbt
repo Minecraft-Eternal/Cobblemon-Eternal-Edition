@@ -120,6 +120,18 @@
 	quest.3FE970CC80B586EB.quest_subtitle: "WIP"
 	quest.46A2507A373FA4E7.quest_desc: ["Shiny Cobblemon are very very rare. Good luck!"]
 	quest.46A2507A373FA4E7.quest_subtitle: "Catch a &e&oShiny Cobblemon"
+	quest.4917971A892C9CFA.quest_desc: [
+		"Face the MIGHTY raid Pokemon in an epic battle by interacting with a &eRaid Crystal Block&r."
+		"Upon Right-Clicking, you will be teleported to the Raid Den where you can challenge the boss!"
+		"You can only bring two mon's with you for a raid battle, so make sure you pick your two favourites!"
+		" "
+		"Upon beating the boss earn unique rewards and the raid boss will join your team!"
+		""
+		"&eTip:&r If you are playing Multiplayer, players can join you!"
+		"&6Hint:&r Come prepared! Raid Dens can be difficult!!"
+	]
+	quest.4917971A892C9CFA.quest_subtitle: "Investigate Raid Crystal Block"
+	quest.4917971A892C9CFA.title: "&dRaid Dens!"
 	quest.4923D2E3695FF1E9.quest_desc: [
 		"A &eResurrection Machine&r can bring back extinct species using DNA from Fossils left behind."
 		""
@@ -249,6 +261,7 @@
 	reward_table.6D8687545BE5E619.title: "relic"
 	reward_table.70DE8427138F48A6.title: "reward_choice_Relic"
 	reward_table.7927B64E62C5E501.title: "pokedex"
+	task.018AE23E88E6E828.title: "Investigate Raid Crystal Block"
 	task.018D3F5CA945F0EC.title: "Any Mint Leaf"
 	task.0233678E76DDED52.title: "Any Backpack"
 	task.029A75D73AB06C02.title: "Any Mint"
