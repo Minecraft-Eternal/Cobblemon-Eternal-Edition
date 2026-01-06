@@ -4,12 +4,17 @@
 global.reloadEncounterData()
 
 ServerEvents.loaded(event => {
-    let seed = event.getServer().worldData.worldGenOptions().seed()
+    let server = event.getServer()
+    let seed = server.worldData.worldGenOptions().seed()
     if(seed < 0)
         seed *= -1.0
     //console.log(seed)
     global.findRegiPuzzles(seed)
     //Object.keys(global.regiPuzzleIndex).forEach(regi => console.log(`${regi} = ${global.regiPuzzleIndex[regi]}`))
+
+    if(!server.persistentData.openDungeonInstSlot) {
+        server.persistentData.openDungeonInstSlot = 0
+    }
 })
 
 

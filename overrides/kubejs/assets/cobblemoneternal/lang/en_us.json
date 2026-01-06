@@ -12,8 +12,13 @@
     "message.cobblemoneternal.command.reload_conditional_encounters.invalid_set": "No such Encounter set '%s'. ensure you're using TitleCase format.",
     "message.cobblemoneternal.command.set_regi_puzzles": "Set Regi Puzzles to Set %s. Restart world to reset.",
     "message.cobblemoneternal.command.set_regi_puzzles.oob": "Puzzle index '%s' is Out of Bounds. Maximum is %s.",
+    "message.cobblemoneternal.command.exitdungeon": "Exiting Dungeon in %s seconds. Don't move!",
+    "message.cobblemoneternal.command.exitdungeon.complete": "Succesfully exited Dungeon.",
+    "message.cobblemoneternal.command.exitdungeon.canceled_by_movement": "Dungeon Exit canceled by movement.",
+    "message.cobblemoneternal.command.exitdungeon.not_in_dungeon": "You aren't in a Dungeon!",
+    "message.cobblemoneternal.command.exitdungeon.forced": "You have been forced out of the Dungeon by an Admin.",
+    "message.cobblemoneternal.command.exitdungeon.forced_not_in_dungeon": "%s isn't in a Dungeon!",
 
-    "message.cobblemoneternal.feature.bottle_cap_min_level_req": "Your Pokémon must be atleast Level 50 to use Bottle Caps!",
     "message.cobblemoneternal.thats_not_your_pokemon": "That's not your Pokémon!",
 
     "message.cobblemoneternal.missing_multiblock": "Multiblock Incomplete",
@@ -32,26 +37,6 @@
     "multiblock.cobblemoneternal.storm_shrine.name": "Storm Shrine",
     "multiblock.cobblemoneternal.dragon_shrine.name": "Draconic Shrine",
 
-
-    "item.cobblemoneternal.bottle_cap.name": "Bottle Cap",
-    "item.cobblemoneternal.bottle_cap.desc": "Craft with Mint Leaves to choose IV to Maximize",
-
-    "item.cobblemoneternal.bottle_cap/typed.name": "Bottle Cap (%s)",
-    "item.cobblemoneternal.bottle_cap/typed.desc": "Maximizes the %s IV",
-
-    "item.cobblemoneternal.bottle_cap_gold.name": "Gold Bottle Cap",
-    "item.cobblemoneternal.bottle_cap_gold.desc": "Maximizes All IVs",
-
-    "item.cobblemoneternal.potential_limiter.desc": "When in the Offhand, Bottle Caps will Minimize IVs",
-
-
-    "message.cobblemoneternal.stat_maximized": "%s's %s IV was Maximized!",
-    "message.cobblemoneternal.multiple_stats_maximized": "%s's %s IVs were Maximized! - UNUSED",
-    "message.cobblemoneternal.all_stats_maximized": "All of %s's IVs were Maximized!",
-
-    "message.cobblemoneternal.stat_minimized": "%s's %s IV was Minimized!",
-    "message.cobblemoneternal.multiple_stats_minimized": "%s's %s IVs were Minimized! - UNUSED",
-    "message.cobblemoneternal.all_stats_minimized": "All of %s's IVs were Minimized!",
 
     "message.cobblemoneternal.message_separator": ", ",
 

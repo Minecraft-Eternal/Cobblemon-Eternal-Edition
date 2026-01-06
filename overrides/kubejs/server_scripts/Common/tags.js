@@ -85,7 +85,9 @@ ServerEvents.tags('item', event => {
     event.add('cobblemoneternal:unfinished', [
         /cobblemoneternal:.*_core/,
         'cobblemoneternal:zygarde_cube',
-        'cobblemoneternal:mewtant_genome'
+        'cobblemoneternal:mewtant_genome',
+        "cobblemoneternal:test_gym_entrance",
+        "cobblemoneternal:test_legend_lair_entrance"
     ])
 
 })

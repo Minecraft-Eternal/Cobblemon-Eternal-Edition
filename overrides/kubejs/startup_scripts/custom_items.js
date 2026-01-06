@@ -42,6 +42,30 @@ const staticSpawnerBlocks = {
 }
 
 
+global.dungeonEntryBlocks = {
+    "test_gym_entrance": {
+        dungeonName: "test_gym",
+        index: 0,
+        spawnOffset: {
+            x: 0,
+            y: 0,
+            z: 0
+        },
+        soundType: "metal"
+    },
+    "test_legend_lair_entrance": {
+        dungeonName: "test_legend_lair",
+        index: 1,
+        spawnOffset: {
+            x: 4,
+            y: -63,
+            z: 0
+        },
+        soundType: "metal"
+    }
+}
+
+
 StartupEvents.registry('item', event => {
     simpleItems.forEach(item => {
         event.create(`cobblemoneternal:${item}`)
@@ -67,4 +91,12 @@ StartupEvents.registry('block', event => {
             })
             .item(builder => builder.tooltip(Text.translate('cobblemoneternal.intentionally_untextured').color('red')))
     })
+
+    for (const [name, properties] of Object.entries(global.dungeonEntryBlocks)) {
+        
+        event.create(`cobblemoneternal:${name}`)
+            .soundType(properties.soundType)
+            .hardness(properties.hardness ? properties.hardness : 50.0)
+            .tagBlock("cobblemoneternal:dungeon_entrance")
+    }
 })
