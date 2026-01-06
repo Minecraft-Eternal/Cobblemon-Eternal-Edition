@@ -5,6 +5,11 @@
 	chapter.1DF598887604D25D.title: "Introduction"
 	chapter.3190B10C12FAB4F7.title: "Farming and Berries"
 	file.0000000000000001.title: "Cobblemon Eternal Quests"
+	quest.006A5458E074E9F8.quest_desc: [
+		"The TM Machine can be used to store TM's"
+		"&oMuch&r more effective than throwing them in chests!"
+	]
+	quest.006A5458E074E9F8.quest_subtitle: "Craft a &eTM Machine"
 	quest.012E4D991A81408A.quest_subtitle: "Craft a &eMaster Ball Fishing Rod"
 	quest.012E4D991A81408A.title: "Master Angler"
 	quest.0271FC09CF404434.quest_desc: [
@@ -94,6 +99,12 @@
 	]
 	quest.30EB65CF8CA493DF.quest_subtitle: "Craft a &eWaystone"
 	quest.30EB65CF8CA493DF.title: "Waystone"
+	quest.336C03C8DAFE8B53.quest_desc: [
+		"Oh look.. they left behind a &o&e\"Trainer Card\"&r !!"
+		"This seems like it will be very useful for  finding more trainers to battle!!"
+	]
+	quest.336C03C8DAFE8B53.quest_subtitle: "Win Your First Battle!"
+	quest.336C03C8DAFE8B53.title: "Defeat a Pokemon!"
 	quest.34CDB13B95A6C649.quest_desc: [
 		"Fast and nimble, the Biplane is a wonderful way to travel large distances quickly."
 		""
@@ -180,8 +191,7 @@
 		""
 		"&eTip:&r You can rarely find Cobble Merchants at villages."
 		"&6Hint:&r Placing a &dDisplay Case&r near a Villager will change their "
-		"proffesion."
-		""
+		"proffesion. You can also use &o\"/cobblemerchant open shop\"&r to open the shop on the go! "
 		"{image:cobbledollars:textures/gui/cobbledollars_background.png width:100 height:25 align:center}"
 	]
 	quest.648B23380CEF3226.quest_subtitle: "Locate a &3Cobble Merchant"
@@ -216,6 +226,13 @@
 	quest.7C9078DABA6430B6.quest_subtitle: "Locate a &eHealing Machine&r at a &6Village"
 	quest.7C9078DABA6430B6.title: "&3Time To Heal!"
 	quest.7D98D24F126DBB3B.quest_subtitle: "Found in Chests"
+	quest.7E3FA7BE238DCACD.quest_desc: [
+		"It would appear in this wonderful world of Cobblemon that Trial Spawners have been occupied by dangerous and rare Cobblemon!! They can be battled to progress the dungeon!"
+		""
+		"&eHint:&r Using  an &dOminous Potion&r while in the Trial Dungeon  upgrades the Cobblemon spawning from the Trial Spawner as a bonus challenge!"
+	]
+	quest.7E3FA7BE238DCACD.quest_subtitle: "Investigate a Trial Spawner!"
+	quest.7E3FA7BE238DCACD.title: "Trials and Tribulations!"
 	reward.0019487E9BA5725C.title: "&eModpack Setup"
 	reward.163A6CB8F046F7B8.title: "&eModpack Setup"
 	reward.21AC6846D373FCE8.title: "&eModpack Setup"
@@ -237,6 +254,7 @@
 	task.029A75D73AB06C02.title: "Any Mint"
 	task.12CD84DA35710EB2.title: "Any Waystone"
 	task.20AC7EEE7A1762F4.title: "Any Bed"
+	task.22BA27431C2ED33C.title: "Investigate Trial Spawner"
 	task.25C8B95D77CD0CA6.title: "Any PokéNav"
 	task.3DA23BFEA2CDD1E9.title: "Poké Trainer"
 	task.3FB41F264A9DA37E.title: "Any PokéFinder"
