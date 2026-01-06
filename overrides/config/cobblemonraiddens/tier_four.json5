@@ -1,0 +1,36 @@
+{
+	// Raids require key items to interact with. Default: false
+	"requires_key": false,
+	// Whether all players require the unique key or just the host. Default: true
+	"all_require_unique": true,
+	// Maximum number of players in a raid (Set to -1 for no limit). Default: 4
+	"max_players": 4,
+	// Number of clears until the raid den deactivates (Set to -1 for no limit). Default: 3
+	"max_clears": 3,
+	// The max number of cheers a player can use per raid. Default: 3
+	"max_cheers": 3,
+	// The chance for raid bosses to have their hidden ability. Default: 0.20
+	"ha_rate": 0.2,
+	// The max number Pokemon a player can use in a raid. Default: 1
+	"raid_party_size": 1,
+	// Raid boss HP multiplier. Default: 12
+	"health_multiplier": 12,
+	// Bonus raid boss HP multiplier for each extra player that joins the raid battle. Default: 1.0
+	"multiplayer_health_multiplier": 1.0,
+	// Raid boss level. Default: 45
+	"boss_level": 45,
+	// Reward Pokemon level. Default: 45
+	"reward_level": 45,
+	// Reward Pokemon number of max IVs. Default: 3
+	"ivs": 3,
+	// The default shiny chance for raid bosses (Set to -1 to use the Cobblemon rate). Default: -1.0
+	"shiny_rate": -1.0,
+	// How much currency is rewarded for clearing a raid boss (Requires CobbleDollars). Default: 10000
+	"currency": 10000,
+	// The max number of Pokemon that can be caught from a raid battle. Default -1.
+	"max_catches": -1,
+	// The default script to add to raid bosses without a script. Default: {}
+	"default_scripts": { },
+	// The battle AI used by the raid boss (Options: RANDOM, STRONG, RCT). Default: RANDOM
+	"raid_ai": "RANDOM"
+}
