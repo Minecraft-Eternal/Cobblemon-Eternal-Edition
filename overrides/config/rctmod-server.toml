@@ -3,7 +3,7 @@
 	#A global factor that determines if a spawn attempt for a trainer is made.
 	# Default: 0.85
 	# Range: 0.0 ~ 1.0
-	globalSpawnChance = 0.6
+	globalSpawnChance = 0.7
 	#━━━━━━━━━━
 	#The interval in ticks at which a spawn attempt is made per player.
 	# Default: 180
@@ -117,7 +117,7 @@
 	#for the first trainer of a series (you may use 'relativeLevelCap' for that).
 	# Default: 15
 	# Range: 1 ~ 2147483646
-	initialLevelCap = 35
+	initialLevelCap = 20
 	#━━━━━━━━━━
 	#If enabled the level cap of a players will not prevent their pokemon from gaining experience and leveling up.
 	allowOverLeveling = false
@@ -153,18 +153,19 @@
 	#Max distance in blocks at which trainers may start a battle on sight.
 	# Default: 8.0
 	# Range: 0.0 ~ 32.0
-	forceBattleMaxDistance = 6.0
+	forceBattleMaxDistance = 2.0
 	#━━━━━━━━━━
 	#Number of ticks a trainer and player need to stare at each other to initiate a battle.
 	#Setting this to a very large number effectively disables this features but trainers
 	#will behave slightly different.
 	# Default: 60
 	# Range: 0 ~ 2147483646
-	forceBattleLookTicks = 60
+	forceBattleLookTicks = 30
 	#━━━━━━━━━━
 	#Maximum level difference between the strongest pokemon of a trainer and a player to
 	#allow the trainer to force a battle.
 	# Default: 16
 	# Range: 0 ~ 2147483646
 	forceBattleMaxLevelDiff = 16
+
 
