@@ -17,7 +17,7 @@ ItemEvents.entityInteracted(event => {
     let pokemon = event.target.pokemon
     let player = event.entity
 
-    console.log(`Passed form change preeval for ${pokemon.getDisplayName()}`)
+    console.log(`Passed form change preeval for ${pokemon.getDisplayName(true)}`)
 
     if(formeChangeTag == undefined) return;
 
@@ -35,7 +35,7 @@ ItemEvents.entityInteracted(event => {
 const setApplianceForm = (formName, pokemon, player) => {
     if(pokemon.species.resourceIdentifier == 'cobblemon:rotom'
         && pokemon.form.name != formName) {
-        global.changeForme(`appliance=${formName.toLowerCase()}`, pokemon, player)
+        global.changeForme('appliance', formName.toLowerCase(), pokemon, player)
         global.playSoundNear(player, null, 'minecraft:block.piston.extend', 'neutral', 1.0, 1.0)
     }
 }

@@ -73,9 +73,9 @@ ServerEvents.tags('item', event => {
 
     //Form change item tags
     // for instances where multiple items should change a form
-    event.add('cobblemoneternal:forme_change/rotom-fan', [/refurbished_furniture:.*_ceiling_fan/])
-    event.add('cobblemoneternal:forme_change/rotom-frost', [/refurbished_furniture:.*_fridge/])
-    event.add('cobblemoneternal:forme_change/rotom-heat', [/refurbished_furniture:.*_stove/])
+    //event.add('cobblemoneternal:forme_change/rotom-fan', [/refurbished_furniture:.*_ceiling_fan/])
+    //event.add('cobblemoneternal:forme_change/rotom-frost', [/refurbished_furniture:.*_fridge/])
+    //event.add('cobblemoneternal:forme_change/rotom-heat', [/refurbished_furniture:.*_stove/])
     //event.add('cobblemoneternal:forme_change/rotom-mow', [])
     //event.add('cobblemoneternal:forme_change/rotom-wash', [])
 
