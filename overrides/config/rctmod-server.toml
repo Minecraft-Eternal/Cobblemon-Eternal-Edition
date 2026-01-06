@@ -34,7 +34,7 @@
 	#player numbers (> 4), for example (|players| + 1)*maxTrainersPerPlayer.
 	# Default: 60
 	# Range: 0 ~ 2147483646
-	maxTrainersTotal = 24
+	maxTrainersTotal = 60
 	#━━━━━━━━━━
 	#The maximum level difference between the strongest pokemon in the team of a
 	#player (at or below that players level cap) and the strongest pokemon in the
@@ -117,7 +117,7 @@
 	#for the first trainer of a series (you may use 'relativeLevelCap' for that).
 	# Default: 15
 	# Range: 1 ~ 2147483646
-	initialLevelCap = 25
+	initialLevelCap = 30
 	#━━━━━━━━━━
 	#If enabled the level cap of a players will not prevent their pokemon from gaining experience and leveling up.
 	allowOverLeveling = false
@@ -167,6 +167,7 @@
 	# Default: 16
 	# Range: 0 ~ 2147483646
 	forceBattleMaxLevelDiff = 16
+
 
 
 
