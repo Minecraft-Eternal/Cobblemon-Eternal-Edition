@@ -569,7 +569,6 @@
 		}
 		{
 			dependencies: ["7C9078DABA6430B6"]
-			hide_until_deps_complete: true
 			id: "5987F4BEB3B4EE16"
 			rewards: [
 				{
@@ -962,7 +961,6 @@
 		}
 		{
 			dependencies: ["116F1AFF9B138FEE"]
-			hide_until_deps_complete: true
 			id: "608565C4FF22309C"
 			rewards: [
 				{
@@ -1596,6 +1594,40 @@
 				observe_type: 0
 				timer: 40L
 				to_observe: "cobblemontrialsedition:cobblemon_trial_spawner"
+				type: "observation"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			id: "4917971A892C9CFA"
+			rewards: [
+				{
+					id: "3602B6F4DB7CBDED"
+					item: {
+						count: 1
+						id: "cobblemon:max_elixir"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "46D4324C8DD8D6E0"
+					item: {
+						count: 1
+						id: "cobblemon:premier_ball"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "cobblemonraiddens:raid_crystal_block"
+				}
+				id: "018AE23E88E6E828"
+				observe_type: 0
+				timer: 60L
+				to_observe: "cobblemonraiddens:raid_crystal_block"
 				type: "observation"
 			}]
 			x: 1.0d
