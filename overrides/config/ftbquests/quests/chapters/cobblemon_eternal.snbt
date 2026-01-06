@@ -275,7 +275,7 @@
 					type: "item"
 				}
 				{
-					count: 8
+					count: 5
 					id: "0B5EF362139F2F78"
 					item: {
 						count: 1
@@ -1466,10 +1466,19 @@
 					type: "random"
 				}
 				{
-					id: "70D384B126A65BAA"
+					count: 3
+					id: "57A8B54B6ABA03AE"
 					item: {
 						count: 1
-						id: "simpletms:machine_tm"
+						id: "cobblemon:poke_ball"
+					}
+					type: "item"
+				}
+				{
+					id: "47957FEA6DE2D542"
+					item: {
+						count: 1
+						id: "cobblemon:max_revive"
 					}
 					type: "item"
 				}
@@ -1481,6 +1490,116 @@
 			}]
 			x: 4.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["5987F4BEB3B4EE16"]
+			id: "006A5458E074E9F8"
+			rewards: [
+				{
+					count: 3
+					id: "7B2DB1284753289D"
+					item: {
+						count: 1
+						id: "cobblemon:poke_ball"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "035A36B59D9243CE"
+					table_id: 5140535383181042102L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "7BF116275FB90FE1"
+				item: { count: 1, id: "simpletms:machine_tm" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "cobblemon:textures/entity_icon/0666_vivillon/vivillon_ocean_shiny.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "336C03C8DAFE8B53"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3B5700555342679E"
+					table_id: 7200463765304942840L
+					type: "choice"
+				}
+				{
+					id: "5377F86E5314538C"
+					item: {
+						count: 1
+						id: "rctmod:trainer_card"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				action: "defeat"
+				amount: 1L
+				biome: ""
+				dex_progress: "seen"
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "72A88FA9002C698B"
+				max_level: 0
+				min_level: 0
+				natures: ""
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "7E3FA7BE238DCACD"
+			rewards: [
+				{
+					count: 5
+					id: "76C0828B5E37AD4E"
+					item: {
+						count: 1
+						id: "cobblemon:ancient_ultra_ball"
+					}
+					type: "item"
+				}
+				{
+					id: "1D8866EBAEF434E0"
+					item: {
+						count: 1
+						id: "cobblemon:rare_candy"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "cobblemontrialsedition:cobblemon_trial_spawner"
+				}
+				id: "22BA27431C2ED33C"
+				observe_type: 0
+				timer: 40L
+				to_observe: "cobblemontrialsedition:cobblemon_trial_spawner"
+				type: "observation"
+			}]
+			x: 1.0d
+			y: 3.0d
 		}
 	]
 }
