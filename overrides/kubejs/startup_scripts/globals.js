@@ -69,10 +69,18 @@ global.eternalForm = (pokemon, player, nickname) => {
  * @param {Pokemon} pokemon the Pokemon that will be changing form
  * @param {Player} player the player to notify of the form change
  */
-global.changeForme = (properties, pokemon, player) => {
-    console.log(`Setting ${pokemon.species.resourceIdentifier} to form with properties: ${properties}`)
-    $PokemonProperties.Companion.parse(properties).apply(pokemon)
-    player.tell(Text.translate('cobblemoneternal.pokemon.form_change', pokemon.getDisplayName()))
+global.changeForme = (featureName, properties, pokemon, player) => {
+    console.log(`Setting ${pokemon.species.resourceIdentifier} to form with feature: ${featureName}, properties: ${properties}`)
+    let feature = pokemon.getFeature(featureName)
+    let currentFeature = feature.value
+    let newFeature = properties.toLowerCase()
+    if(newFeature != null && currentFeature != newFeature) {
+        feature.value = newFeature
+        pokemon.updateAspects()
+        pokemon.markFeatureDirty(feature)
+    }
+    //$PokemonProperties.Companion.parse(properties).apply(pokemon)
+    player.tell(Text.translate('cobblemoneternal.pokemon.form_change', pokemon.getDisplayName(true)))
 }
 
 
