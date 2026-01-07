@@ -1,8 +1,8 @@
 {
-  "MinCaptureHPThreshold": 0.2,
+  "MinCaptureHPThreshold": 0.6,
   "BonusCatchRate": 0.0,
-  "AllowMasterBall": false,
-  "AllowOriginBall": false,
-  "AllowQuickBall": false,
-  "AllowSafariBall": false
+  "AllowMasterBall": true,
+  "AllowOriginBall": true,
+  "AllowQuickBall": true,
+  "AllowSafariBall": true
 }
