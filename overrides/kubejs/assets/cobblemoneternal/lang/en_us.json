@@ -54,5 +54,8 @@
 
     "cobblemoneternal.species.snom-eternal.desc": "Thanks to its hard icy shell protecting it, this Pokémon has plenty of time to think. It has been observed to frequently answer questions from other Pokémon.",
 
-    "cobblemoneternal.species.rotom-eternal.desc": "Despite being shaped similarly to a Lightbulb, this Pokémon isn't very bright. When interacting with Snom, it can often be seen teasing them."
+    "cobblemoneternal.species.rotom-eternal.desc": "Despite being shaped similarly to a Lightbulb, this Pokémon isn't very bright. When interacting with Snom, it can often be seen teasing them.",
+
+    "tooltip.cobblemoneternal.trainer_card.1": "Points towards important trainers needed for progression!",
+    "tooltip.cobblemoneternal.trainer_card.2": "Keeps track of your battle progress."
 }
