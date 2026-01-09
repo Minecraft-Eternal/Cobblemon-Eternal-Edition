@@ -47,9 +47,9 @@ global.dungeonEntryBlocks = {
         dungeonName: "test_gym",
         index: 0,
         spawnOffset: {
-            x: 0,
-            y: 0,
-            z: 0
+            x: 1,
+            y: 1,
+            z: -1
         },
         soundType: "metal"
     },
