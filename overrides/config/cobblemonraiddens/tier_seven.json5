@@ -12,7 +12,7 @@
 	// The chance for raid bosses to have their hidden ability. Default: 0.20
 	"ha_rate": 0.2,
 	// The max number Pokemon a player can use in a raid. Default: 1
-	"raid_party_size": 1,
+	"raid_party_size": 2,
 	// Raid boss HP multiplier. Default: 30
 	"health_multiplier": 30,
 	// Bonus raid boss HP multiplier for each extra player that joins the raid battle. Default: 1.0
