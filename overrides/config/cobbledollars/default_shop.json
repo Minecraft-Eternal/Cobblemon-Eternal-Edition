@@ -20,11 +20,19 @@
         },
         {
           "item": "cobblemon:potion",
-          "price": 200
+          "price": 150
         },
         {
           "item": "cobblemon:poke_ball",
           "price": 250
+        },
+        {
+          "item": "cobblemon:revive",
+          "price": 250
+        },
+         {
+          "item": "cobblemon:max_revive",
+          "price": 500
         },
         {
           "item": "cobblemon:x_accuracy",
