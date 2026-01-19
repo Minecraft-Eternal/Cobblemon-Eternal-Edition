@@ -172,44 +172,9 @@
       "Shoe Shop": [
         {
           "item": "artifacts:running_shoes",
-          "price": 100,
-          "components": "{\"relics:data\":{abilities:{abilities:{runner:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{speed:{initialValue:0.50299d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
-        },
-        {
-          "item": "relics:roller_skates",
-          "price": 2500,
-          "components": "{\"relics:data\":{abilities:{abilities:{skating:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{duration:{initialValue:26.60621d},speed:{initialValue:0.00417d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
-        },
-        {
-          "item": "relics:ice_skates",
-          "price": 2500,
-          "components": "{\"relics:data\":{abilities:{abilities:{ram:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:0},points:0,research:{links:{},researched:0b},stats:{damage:{initialValue:0.20513d}}},skating:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{duration:{initialValue:36.83532d},speed:{initialValue:0.02489d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
-        },
-        {
-          "item": "relics:ice_breaker",
-          "price": 2500,
-          "components": "{\"relics:data\":{abilities:{abilities:{impact:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{damage:{initialValue:3.07076d},size:{initialValue:4.59029d}}},sustainability:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{modifier:{initialValue:0.63696d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
-        },
-        {
-          "item": "relics:magma_walker",
-          "price": 3500,
-          "components": "{\"relics:data\":{abilities:{abilities:{heat_resistance:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{}},pace:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{time:{initialValue:23.50854d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
-        },
-        {
-          "item": "relics:aqua_walker",
-          "price": 3500,
-          "components": "{\"relics:data\":{abilities:{abilities:{walking:{extender:{cooldown:0,cooldownCap:0,ticking:0b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{time:{initialValue:44.76712d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
-        },
-        {
-          "item": "relics:springy_boot",
-          "price": 3500,
-          "components": "{\"relics:data\":{abilities:{abilities:{bounce:{extender:{cooldown:0,cooldownCap:0,ticking:1b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{power:{initialValue:0.3053d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
-        },
-        {
-          "item": "relics:phantom_boot",
-          "price": 8000,
-          "components": "{\"relics:data\":{abilities:{abilities:{bridge:{extender:{cooldown:0,cooldownCap:0,ticking:1b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{duration:{initialValue:0.62823d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+          "price": 300
         }
+       
       ]
     },
     {
@@ -232,8 +197,7 @@
       "Flamingo": [
         {
           "item": "artifacts:helium_flamingo",
-          "price": 5000,
-          "components": "{\"relics:data\":{abilities:{abilities:{flying:{extender:{cooldown:0,cooldownCap:0,ticking:1b},lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{time:{initialValue:4.47264d}}}}},leveling:{experience:0,level:0,luck:0,points:0}}}"
+          "price": 5000
         }
       ]
     }
