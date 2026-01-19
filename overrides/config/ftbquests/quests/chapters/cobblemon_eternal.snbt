@@ -429,7 +429,7 @@
 				}
 				{
 					auto: "invisible"
-					command: "/execute at @p run rctmod trainer summon team_rocket_grunt_015f ~5 ~ ~"
+					command: "/execute at @p run summon minecraft:villager ~5 ~ ~ {  VillagerData:{    type:\"minecraft:plains\",    profession:\"cobbledollars:cobble_merchant\",    level:5  },  CustomName:'{\"text\":\"Cobble Merchant\"}',  CustomNameVisible:1b,  Invulnerable:1b,  PersistenceRequired:1b}"
 					icon: {
 						id: "ftbquests:book"
 					}
