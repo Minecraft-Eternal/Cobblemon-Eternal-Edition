@@ -1,0 +1,4 @@
+{
+  "individualOverrides": {"canBreakBlocks": false, "onlyProtectOriginalBlocks":true, "allowExplosions":false, "preventHostileSpawns":true, "allowPlayerPVP":false, "allowFireSpread":false, "creativeBypass":true, "preventMobGriefing":true},
+  "note": "Only properties that differ from global config are saved here. See global.json for defaults."
+}
