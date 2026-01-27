@@ -1,0 +1,189 @@
+[hyperMode]
+	#Whether Hyper Mode mechanics are enabled.
+	enabled = true
+
+[reverseMode]
+	#Whether Reverse Mode mechanics are enabled.
+	enabled = true
+
+[goDamageModifier]
+	#Whether Shadow Pokemon do 20% more and take 20% more damage like in Pokemon GO.
+	enabled = false
+
+[callButton]
+	#If true, the Call button in battle reduces the Heart Gauge of Shadow Pokémon when snapping them out of Hyper Mode or Reverse Mode.
+	reducesHeartGauge = true
+	#If true, the Call button provides an accuracy boost to the Pokémon if they are not in Hyper Mode or Reverse Mode.
+	accuracyBoost = true
+	#If true, the Call button can wake up a sleeping Pokémon.
+	removeSleep = true
+
+[scent]
+	#Cooldown in seconds between using Scent items on a Pokémon.
+	# Default: 300
+	# Range: > 0
+	cooldownSeconds = 300
+	#If true, the expanded scent system with more scents and nature affinities is enabled.
+	expandedSystemEnabled = true
+
+[shadowMoves]
+	#If true, Shadow moves are super effective against non-Shadow Pokémon.
+	superEffectiveEnabled = true
+	#How many moves to replace with Shadow moves. Supports single values (e.g. '1') or ranges (e.g. '1-3').
+	replaceCount = "1"
+	#If true, only 'Shadow Rush' will be assigned, even if replaceCount > 1.
+	onlyShadowRush = false
+
+[auraScanner]
+	#The range (in blocks) at which the Aura Scanner can detect Shadow Pokemon.
+	# Default: 128
+	# Range: 1 ~ 512
+	auraScannerShadowRange = 128
+	#The range (in blocks) at which the Aura Scanner can detect Shadowfall meteoroids.
+	# Default: 256
+	# Range: 1 ~ 512
+	auraScannerMeteoroidRange = 256
+
+[relicStone]
+	#Cooldown in minutes between using the Relic Stone's purification function.
+	# Default: 5
+	# Range: > 0
+	cooldownMinutes = 5
+
+[shadowSpawn]
+	#The percentage chance (0.0-100.0) for a wild Pokémon to spawn as a Shadow Pokémon.
+	# Default: 0.78125
+	# Range: 0.0 ~ 100.0
+	chancePercent = 0.78125
+	#List of Pokémon species or tags that cannot spawn as Shadow Pokémon.
+	blacklist = ["#shadowedhearts:legendaries", "#shadowedhearts:mythical"]
+
+	[modIntegrations.rctmod]
+		#Enables integration with Radical Cobblemon Trainers.
+		enabled = true
+
+		[modIntegrations.rctmod.append]
+			#The trainer types that this section applies to.
+			trainerTypes = ["normal"]
+			#Format: type=presetId. Mapping of trainer types to their respective Shadow Pokémon presets.
+			typePresets = ["normal=shadowedhearts/normal_20"]
+			#List of specific trainer IDs that should be excluded from Shadow Pokémon injection.
+			trainerBlacklist = []
+			#Format: id;preset;tag1,tag2... Specific trainer definitions with presets and optional tags.
+			trainers = ["normal;shadowedhearts/normal_20;"]
+
+		[modIntegrations.rctmod.convert]
+			#The trainer types that this section applies to.
+			trainerTypes = ["normal"]
+			#Format: type=presetId. Mapping of trainer types to their respective Shadow Pokémon presets.
+			typePresets = ["normal=shadowedhearts/normal_20"]
+			#List of specific trainer IDs that should be excluded from Shadow Pokémon injection.
+			trainerBlacklist = []
+			#Format: id;preset;tag1,tag2... Specific trainer definitions with presets and optional tags.
+			trainers = ["normal;shadowedhearts/normal_20;"]
+
+		[modIntegrations.rctmod.replace]
+			#The trainer types that this section applies to.
+			trainerTypes = ["team_rocket", "team_galactic", "team_shadow"]
+			#Format: type=presetId. Mapping of trainer types to their respective Shadow Pokémon presets.
+			typePresets = ["team_rocket=shadowedhearts/team_rocket", "team_galactic=shadowedhearts/team_galactic", "team_shadow=shadowedhearts/team_shadow"]
+			#List of specific trainer IDs that should be excluded from Shadow Pokémon injection.
+			trainerBlacklist = []
+			#Format: id;preset;tag1,tag2... Specific trainer definitions with presets and optional tags.
+			trainers = ["team_rocket;shadowedhearts/team_rocket;", "team_galactic;shadowedhearts/team_galactic;", "team_shadow;shadowedhearts/team_shadow;"]
+
+[worldAlteration]
+	#Whether the Shadowfall event is active, enabling meteoroid impacts.
+	shadowfallActive = true
+	#The average number of ticks between impact attempts. (e.g., 12000 ticks = 10 minutes)
+	# Default: 12000
+	# Range: > 1
+	impactChanceOneInTicks = 12000
+	#Chunks with activity heatmap above this value are considered 'civilized' and protected from impacts.
+	# Default: 100
+	# Range: > 0
+	civilizedHeatmapThreshold = 100
+	#How often (in ticks) the player activity heatmap decays.
+	# Default: 1200
+	# Range: > 1
+	heatmapDecayTicks = 1200
+	#The amount of activity that decays from each chunk every decay cycle.
+	# Default: 1.0
+	# Range: 0.0 ~ 1000.0
+	heatmapDecayAmount = 1.0
+	#Minimum distance (in blocks) from any player for an impact to occur.
+	# Default: 64
+	# Range: > 0
+	minImpactDistanceToPlayer = 1
+	#Maximum distance (in blocks) from a player to consider for an impact.
+	# Default: 256
+	# Range: > 1
+	maxImpactDistanceToPlayer = 256
+	#Minimum distance (in blocks) from any generated structures for an impact to occur.
+	# Default: 64
+	# Range: > 0
+	minImpactDistanceToStructures = 64
+	#Minimum distance (in blocks) from the world spawn point for an impact to occur.
+	# Default: 128
+	# Range: > 0
+	minImpactDistanceToSpawn = 128
+	#Minimum radius of generated craters.
+	# Default: 8
+	# Range: 1 ~ 100
+	minCraterRadius = 8
+	#Maximum radius of generated craters.
+	# Default: 16
+	# Range: 1 ~ 100
+	maxCraterRadius = 16
+	#Radius (in chunks) around players where activity heatmap is increased.
+	# Default: 2
+	# Range: 0 ~ 16
+	heatmapPresenceRadius = 2
+	#How often (in ticks) the activity heatmap is flushed to disk.
+	# Default: 1200
+	# Range: > 1
+	heatmapFlushIntervalTicks = 1200
+	#Radius (in blocks) within which players will receive a message and hear a sound when a meteoroid impacts.
+	# Default: 256
+	# Range: > 0
+	meteoroidImpactBroadcastRadius = 256
+	#Whether wild Pokemon near shadowfall meteoroids can become Shadow Pokemon over time.
+	meteoroidShadowTransformationEnabled = true
+	#Radius around meteoroids to check for wild Pokemon.
+	# Default: 16
+	# Range: 1 ~ 64
+	meteoroidShadowTransformationRadius = 16
+	#How often (in ticks) to check for wild Pokemon near meteoroids.
+	# Default: 100
+	# Range: 20 ~ 12000
+	meteoroidShadowTransformationCheckIntervalTicks = 100
+	#The base chance per check interval for a wild Pokemon near a meteoroid to become a Shadow Pokemon.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	meteoroidShadowTransformationChancePerInterval = 0.05
+	#The amount of exposure a wild Pokemon gains per check interval when near a meteoroid.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	meteoroidShadowTransformationExposureIncrease = 1.0
+	#The amount of exposure a wild Pokemon loses per check interval when NOT near a meteoroid.
+	# Default: 0.5
+	# Range: 0.0 ~ 100.0
+	meteoroidShadowTransformationExposureDecay = 0.5
+	#The multiplier applied to the base shadow spawn chance when a Pokemon spawns near a meteoroid.
+	# Default: 5.0
+	# Range: 0.0 ~ 100.0
+	meteoroidShadowSpawnChanceMultiplier = 5.0
+	#Whether shadowfall meteoroids and craters are placed in the world during chunk generation.
+	meteoroidWorldGenEnabled = true
+	#Average distance (in chunks) between meteoroid structure placement attempts.
+	# Default: 26
+	# Range: 0 ~ 4096
+	meteoroidSpacing = 26
+	#Minimum distance (in chunks) between meteoroid structure placement attempts. Must be less than spacing.
+	# Default: 11
+	# Range: 0 ~ 4096
+	meteoroidSeparation = 11
+	#A list of biomes where shadowfall meteoroids cannot impact. Biome Tags, such as #minecraft:is_forest are also acceptable.
+	meteoroidBiomeBlacklist = []
+	#A list of biomes where shadowfall meteoroids can impact. If not empty, only these biomes will be allowed.  Biome Tags, such as #minecraft:is_forest are also acceptable.
+	meteoroidBiomeWhitelist = []

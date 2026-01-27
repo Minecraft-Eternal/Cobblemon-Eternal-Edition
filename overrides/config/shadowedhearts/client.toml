@@ -1,0 +1,10 @@
+#Master toggle for client-side Shadow aura rendering.
+enableShadowAura = true
+#Whether the Aura Scanner HUD is enabled.
+auraScannerEnabled = true
+#Whether to skip the Iris shader warning screen.
+skipIrisWarning = true
+#The Y offset for the Aura Reader model.
+# Default: -0.15
+# Range: -10.0 ~ 10.0
+auraReaderYOffset = -0.15
