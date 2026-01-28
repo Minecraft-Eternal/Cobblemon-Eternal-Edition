@@ -3,1417 +3,69 @@
 	default_quest_shape: ""
 	filename: "cobblemon_eternal"
 	group: ""
+	icon: {
+		id: "cobblemon:poke_ball"
+	}
 	id: "1DF598887604D25D"
-	images: [{
-		height: 2.7d
-		image: "kubejs:textures/cobblemon_eternal_title.png"
-		rotation: 0.0d
-		width: 9.0d
-		x: 2.0d
-		y: -1.0d
-	}]
+	images: [
+		{
+			height: 2.7d
+			image: "kubejs:textures/cobblemon_eternal_title.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "cobblemon:item/held_items/exp_share"
+			rotation: -45.0d
+			width: 1.0d
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			height: 2.0d
+			image: "cobblemon:textures/entity_icon/0151_mew/mew.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			height: 2.0d
+			image: "cobblemon:textures/entity_icon/0155_cyndaquil/cyndaquil_shiny.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -3.5d
+			y: 2.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			id: "7C9078DABA6430B6"
-			rewards: [
-				{
-					count: 8
-					id: "18A0A697181888D8"
-					item: {
-						count: 1
-						id: "cobblemon:poke_ball"
-					}
-					type: "item"
-				}
-				{
-					id: "788D5483911567CD"
-					item: {
-						count: 1
-						id: "cobblemon:apricorn_door"
-					}
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "5BBF2EC91C49F5C6"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					count: 3
-					id: "0101D8EFD3B7571C"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				icon: {
-					id: "cobblemon:healing_machine"
-				}
-				id: "77FDCDD3BDA405DC"
-				observe_type: 0
-				timer: 0L
-				to_observe: "cobblemon:healing_machine"
-				type: "observation"
-			}]
-			x: -1.5d
-			y: 3.0d
-		}
-		{
-			id: "15CADD4029E11471"
-			rewards: [
-				{
-					count: 6
-					id: "27BD4BFD17D417E6"
-					item: {
-						count: 1
-						id: "cobblemon:net_ball"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "5B146FD089571EC7"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					icon: {
-						id: "cobblemon:yellow_gilded_chest"
-					}
-					id: "355C2645DE80D047"
-					table_id: 8133083280444442790L
-					type: "choice"
-				}
-			]
-			tasks: [{
-				id: "637B6A4A68CFC780"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemon:poke_rods)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			id: "2A4E2FB2F9EB344D"
-			rewards: [
-				{
-					count: 3
-					id: "21790DF6C4CE33FC"
-					item: {
-						count: 1
-						id: "cobblemon:premier_ball"
-					}
-					type: "item"
-				}
-				{
-					id: "28D506DEEB1190E7"
-					item: {
-						count: 1
-						id: "cobblemon:potion"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "1186CA5911A2ABFB"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "4621FD9BA9A209A1"
-				item: { count: 1, id: "cobblemon:poke_ball" }
-				only_from_crafting: true
-				type: "item"
-			}]
-			x: -1.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["2A4E2FB2F9EB344D"]
-			id: "5EAC27E2738426EF"
-			rewards: [
-				{
-					count: 8
-					id: "704CACC31EB1F133"
-					item: {
-						count: 1
-						id: "cobblemon:great_ball"
-					}
-					type: "item"
-				}
-				{
-					id: "6E1C9C82E700F90C"
-					item: {
-						count: 1
-						id: "cobblemon:revive"
-					}
-					type: "item"
-				}
-				{
-					id: "568E2C8BFD6F33C7"
-					item: {
-						count: 1
-						id: "cobblemon:super_potion"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "2A8C9CDFA067F954"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-				{
-					id: "5387A9BEFA61DA32"
-					item: {
-						count: 1
-						id: "simpletms:tr_icepunch"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "427B9293037DDACE"
-				item: { count: 1, id: "cobblemon:great_ball" }
-				only_from_crafting: true
-				type: "item"
-			}]
-			x: 0.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["5EAC27E2738426EF"]
-			id: "2D5377E10B83CCBA"
-			rewards: [
-				{
-					count: 8
-					id: "28D7F3CAC9B4F468"
-					item: {
-						count: 1
-						id: "cobblemon:ultra_ball"
-					}
-					type: "item"
-				}
-				{
-					id: "29FBCFDCA9167C91"
-					item: {
-						count: 1
-						id: "cobblemon:max_revive"
-					}
-					type: "item"
-				}
-				{
-					id: "7601944271B13BAD"
-					item: {
-						count: 1
-						id: "cobblemon:max_potion"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "0EC9CB1BA1DE71DF"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-				{
-					id: "098B804E1D6CCD4A"
-					item: {
-						count: 1
-						id: "simpletms:tr_thunderpunch"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "7F639626CBE5200E"
-				item: { count: 1, id: "cobblemon:ultra_ball" }
-				type: "item"
-			}]
-			x: 3.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["2D5377E10B83CCBA"]
-			id: "2E6C061FCAC0007A"
-			rewards: [
-				{
-					id: "58B184F68E07640C"
-					item: {
-						count: 1
-						id: "cobblemon:dragon_gem"
-					}
-					type: "item"
-				}
-				{
-					count: 15
-					id: "2C81DB73EDD575EC"
-					item: {
-						count: 1
-						id: "cobblemon:ancient_ultra_ball"
-					}
-					type: "item"
-				}
-				{
-					count: 5
-					id: "0B5EF362139F2F78"
-					item: {
-						count: 1
-						id: "cobblemon:rare_candy"
-					}
-					type: "item"
-				}
-				{
-					auto: "invisible"
-					command: "/execute at @p run rctmod trainer summon leader_brock_0038 ~5 ~ ~"
-					icon: {
-						id: "ftbquests:book"
-					}
-					id: "0019487E9BA5725C"
-					permission_level: 2
-					silent: true
-					type: "command"
-				}
-				{
-					count: 3
-					id: "08218239B8CFD21F"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-				{
-					id: "1CAA2A64B95A4398"
-					item: {
-						count: 1
-						id: "simpletms:tr_shadowball"
-					}
-					type: "item"
-				}
-			]
-			shape: "octagon"
-			tasks: [{
-				id: "24B29BF56FFBF6CF"
-				item: { count: 1, id: "cobblemon:master_ball" }
-				type: "item"
-			}]
-			x: 5.5d
-			y: 9.0d
-		}
-		{
-			id: "7B6EE4E7B5D9ADBB"
-			rewards: [
-				{
-					id: "038F3EEEFFF153B7"
-					item: {
-						count: 1
-						id: "cobblemon:rare_candy"
-					}
-					type: "item"
-				}
-				{
-					id: "6D93EF2262875A63"
-					item: {
-						count: 1
-						id: "cobblemon:ether"
-					}
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "293C0F5E9BEB794D"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					auto: "enabled"
-					command: "/execute at @p run rctmod trainer summon twins_eli_and_anne_0215 ~5 ~ ~"
-					icon: {
-						id: "ftbquests:book"
-					}
-					id: "61A8C285937952F7"
-					permission_level: 2
-					silent: true
-					type: "command"
-				}
-				{
-					count: 3
-					id: "1FEC47C10053AD4A"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "5E50095AB95A4282"
-				item: { count: 1, id: "cobblemon:pc" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["2E6C061FCAC0007A"]
-			hide_until_deps_complete: true
-			id: "012E4D991A81408A"
-			rewards: [
-				{
-					id: "5B01093375816455"
-					item: {
-						count: 1
-						id: "cobblemon:master_ball"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "640DD2DC15C5B70E"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			shape: "hexagon"
-			tasks: [{
-				id: "03D2DA45379359E5"
-				item: { count: 1, id: "cobblemon:master_rod" }
-				type: "item"
-			}]
-			x: 5.5d
-			y: 10.5d
-		}
-		{
-			id: "09BD5BE582E54F69"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4A8137D89F0AFF5F"
-					table_id: 8730146850461836545L
-					type: "choice"
-				}
-				{
-					auto: "invisible"
-					command: "/gamerule mobTargetInBattle false"
-					icon: {
-						id: "ftbquests:book"
-					}
-					id: "21AC6846D373FCE8"
-					permission_level: 2
-					silent: true
-					type: "command"
-				}
-				{
-					auto: "invisible"
-					command: "/execute at @p run summon minecraft:villager ~5 ~ ~ {  VillagerData:{    type:\"minecraft:plains\",    profession:\"cobbledollars:cobble_merchant\",    level:5  },  CustomName:'{\"text\":\"Cobble Merchant\"}',  CustomNameVisible:1b,  Invulnerable:1b,  PersistenceRequired:1b}"
-					icon: {
-						id: "ftbquests:book"
-					}
-					id: "163A6CB8F046F7B8"
-					permission_level: 2
-					silent: true
-					type: "command"
-				}
-			]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: {
-					id: "cobblemon:ghost_gem"
-				}
-				id: "65EEA61A34DC0DC6"
-				type: "dimension"
-			}]
-			x: 2.030952380952378d
-			y: 1.6120748299319025d
-		}
-		{
-			hide_until_deps_complete: true
-			id: "1A0BD89EC5FB4061"
-			rewards: [
-				{
-					count: 8
-					id: "7DB34C0581C2991F"
-					item: {
-						count: 1
-						id: "cobblemon:poke_ball"
-					}
-					type: "item"
-				}
-				{
-					count: 2
-					id: "564DF038F0AFC7C2"
-					item: {
-						count: 1
-						id: "cobblemon:revive"
-					}
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7965A8085BBEFE03"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					count: 3
-					id: "11F030EBC79705FE"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "0233678E76DDED52"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemoneternal:backpacks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 5.5d
-			y: 1.5d
-		}
-		{
-			id: "532FBFE98329A7D6"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1677C6E85641C11A"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "6FA5150FB6F4926F"
-					item: {
-						count: 1
-						id: "farmersdelight:egg_sandwich"
-					}
-					type: "item"
-				}
-			]
-			shape: "hexagon"
-			tasks: [{
-				advancement: "cobblemon:first_catch"
-				criterion: ""
-				id: "4CB9166594EE3C43"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: 3.0d
-		}
-		{
-			id: "46A2507A373FA4E7"
-			rewards: [
-				{
-					count: 15
-					id: "064FAE5EEBD971A0"
-					item: {
-						count: 1
-						id: "cobblemon:ancient_ultra_ball"
-					}
-					type: "item"
-				}
-				{
-					count: 5
-					id: "46E09EBF46ECF549"
-					item: {
-						count: 1
-						id: "cobblemon:rare_candy"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "212062A0B1AB59F5"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			shape: "octagon"
-			tasks: [{
-				advancement: "cobblemon:first_shiny_catch"
-				criterion: ""
-				id: "6BFFADD32A236182"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: 10.5d
-		}
-		{
-			dependencies: ["7C9078DABA6430B6"]
-			id: "5987F4BEB3B4EE16"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7F17C303D9BE1A9A"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "47B84B88E2C65E02"
-					item: {
-						count: 1
-						id: "cobblemon:twisted_spoon"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "09C42C1F208E0BA1"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "3288887B6B4358AC"
-				item: { count: 1, id: "simpletms:tr_blank" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 1.5d
-		}
-		{
-			id: "648B23380CEF3226"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "773CC2A924914EA3"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					command: "/cobbledollars give @p 100"
-					icon: {
-						id: "cobble_contests:contest_card"
-					}
-					id: "3CE2CD054F14D962"
-					permission_level: 2
-					type: "command"
-				}
-				{
-					count: 3
-					id: "4DBCE37B5787913A"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				icon: {
-					components: {
-						"relics:data": {
-							abilities: {
-								abilities: {
-									runner: {
-										extender: {
-											cooldown: 0
-											cooldownCap: 0
-											ticking: 0b
-										}
-										lock: {
-											breaks: 5
-										}
-										points: 0
-										research: {
-											links: { }
-											researched: 0b
-										}
-										stats: {
-											speed: {
-												initialValue: 0.50868d
-											}
-										}
-									}
-								}
-							}
-							leveling: {
-								experience: 0
-								level: 0
-								luck: 0
-								points: 0
-							}
-						}
-					}
-					id: "artifacts:running_shoes"
-				}
-				id: "74226782568B43E3"
-				observe_type: 5
-				timer: 0L
-				to_observe: "cobbledollars:cobble_merchant"
-				type: "observation"
-			}]
-			x: 5.5d
-			y: 3.0d
-		}
-		{
-			id: "26383FB3CB75BF13"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "407CB9DB4F7EEAE2"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					count: 2
-					id: "626F7710118B2E4E"
-					item: {
-						count: 1
-						id: "cobblemon:ultra_ball"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "5A86E5A52FAB9DC8"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "11F4CE31CF15E9C0"
-				item: { count: 1, id: "immersive_aircraft:airship" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 4.5d
-		}
-		{
-			id: "276FBA28044EB55F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4E992EF71B587B9F"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					count: 8
-					id: "4BA07786610203D7"
-					item: {
-						count: 1
-						id: "cobblemon:premier_ball"
-					}
-					type: "item"
-				}
-				{
-					id: "2695287BC01D4F28"
-					item: {
-						count: 1
-						id: "cobblemon:power_herb"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "569F6814C8251BAA"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "387F95DB6A05B316"
-				item: { count: 1, id: "buildinggadgets2:gadget_building" }
-				type: "item"
-			}]
-			x: 5.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["276FBA28044EB55F"]
-			hide_until_deps_complete: true
-			id: "7601DD3E65B378B4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "474DE1BF2D688176"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "53D2B451A601B883"
-					item: {
-						count: 1
-						id: "cobblemon:max_revive"
-					}
-					type: "item"
-				}
-				{
-					id: "16C86D2BCA4F2C37"
-					item: {
-						count: 1
-						id: "cobblemon:rocky_helmet"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "592B07CE3897FBAE"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "13F4C888054D7D55"
-				item: { count: 1, id: "charginggadgets:charging_station" }
-				type: "item"
-			}]
-			x: 5.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["26383FB3CB75BF13"]
-			hide_until_deps_complete: true
-			id: "34CDB13B95A6C649"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "79A0EBA27270FF74"
-					table_id: 7200463765304942840L
-					type: "loot"
-				}
-				{
-					id: "005C8624B09BCB9B"
-					item: {
-						count: 1
-						id: "cobblemon:chesto_berry"
-					}
-					type: "item"
-				}
-				{
-					id: "02423C3C09A08BEB"
-					item: {
-						count: 1
-						id: "cobblemon:weakness_policy"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "594113F4794AF41B"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "7E8AF8D8CECF4778"
-				item: { count: 1, id: "immersive_aircraft:biplane" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 6.5d
-		}
-		{
-			id: "1A99838DE8E97CE2"
-			rewards: [
-				{
-					id: "7C575042C224DB3D"
-					item: {
-						count: 1
-						id: "cobblemon:leftovers"
-					}
-					type: "item"
-				}
-				{
-					id: "61A4A75A2EF971ED"
-					item: {
-						count: 1
-						id: "comforts:sleeping_bag_purple"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "57F130EDCA532D30"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "20AC7EEE7A1762F4"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["1A99838DE8E97CE2"]
-			id: "30EB65CF8CA493DF"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "16E2D951D7952861"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "6A632A4D634E1A1A"
-					item: {
-						count: 1
-						id: "cobblemon:eviolite"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "38400404085FE64D"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "12CD84DA35710EB2"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(waystones:waystones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 6.5d
-		}
-		{
-			id: "116F1AFF9B138FEE"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "74198E983258EC66"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					count: 3
-					id: "26B5D40F075D801B"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-				{
-					auto: "invisible"
-					command: "/execute at @p run rctmod trainer summon team_rocket_admin_0220 ~7 ~ ~"
-					icon: {
-						id: "badgebox:poison_badge"
-					}
-					id: "6837BCBB4D56FF46"
-					permission_level: 2
-					silent: true
-					type: "command"
-				}
-			]
-			tasks: [{
-				id: "25C8B95D77CD0CA6"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblenav:pokenav)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: -3.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["116F1AFF9B138FEE"]
-			id: "608565C4FF22309C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7B92BD17DB4BA0CF"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "3C32907EA66E911E"
-					item: {
-						count: 1
-						id: "farmersdelight:bacon_and_eggs"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "3FB41F264A9DA37E"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemoneternal:pokefinder)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: -3.5d
-			y: 1.5d
-		}
-		{
-			id: "21FBFEDDB954BC62"
-			tasks: [{
-				id: "48AD5660F7C27B2E"
-				item: { count: 1, id: "badgebox:badgesbox" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["21FBFEDDB954BC62"]
-			hide_until_deps_complete: true
-			id: "6A954B946EFFC175"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6C8456236A5F3B08"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "781B7FABCBF94CC6"
-					item: {
-						count: 1
-						id: "farmersdelight:egg_sandwich"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "7F80CBD8D364120E"
-				item: { count: 1, id: "cobble_contests:ball_swapper" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 1.5d
-		}
-		{
 			icon: {
-				id: "cobblemon:repeat_ball"
+				id: "cobblemon:poke_ball"
 			}
-			id: "2BB19CFF6357DB5C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1EC22FBE5AA767DD"
-					table_id: 7200463765304942840L
-					type: "loot"
-				}
-				{
-					icon: {
-						id: "cobblemon:relic_coin_pouch"
-					}
-					id: "1B28391BC62CA21B"
-					table_id: 5140535383181042102L
-					type: "random"
-				}
-				{
-					id: "7641A1A4BE65062C"
-					item: {
-						count: 1
-						id: "cobblemon:rare_candy"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				action: "catch"
-				amount: 10L
-				biome: ""
-				dex_progress: "seen"
-				dimension: ""
-				form: ""
-				gender: ""
-				id: "3DA23BFEA2CDD1E9"
-				max_level: 0
-				min_level: 0
-				natures: ""
-				poke_ball_used: ""
-				pokemon: ""
-				pokemon_type: ""
-				region: ""
-				shiny: false
-				time_max: 24000L
-				time_min: 0L
-				type: "cobblemon_tasks:cobblemon_task"
-			}]
-			x: -3.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["2BB19CFF6357DB5C"]
-			icon: {
-				id: "cobblemon:premier_ball"
-			}
-			id: "4BD6632DFCF9F496"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "157A27FF2C6727E1"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					icon: {
-						id: "cobblemon:relic_coin_pouch"
-					}
-					id: "322FFB1300DB5530"
-					table_id: 5140535383181042102L
-					type: "random"
-				}
-				{
-					id: "3DAA1D6B5C00ED02"
-					item: {
-						count: 1
-						id: "cobblemon:rare_candy"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				action: "catch"
-				amount: 50L
-				biome: ""
-				dex_progress: "seen"
-				dimension: ""
-				form: ""
-				gender: ""
-				id: "489BD304A4EC94D6"
-				max_level: 0
-				min_level: 0
-				natures: ""
-				poke_ball_used: ""
-				pokemon: ""
-				pokemon_type: ""
-				region: ""
-				shiny: false
-				time_max: 24000L
-				time_min: 0L
-				type: "cobblemon_tasks:cobblemon_task"
-			}]
-			x: -3.5d
-			y: 6.5d
-		}
-		{
-			icon: {
-				id: "cobblemon:exp_candy_l"
-			}
-			id: "74005CB1AF80AA78"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0455DFC614A3E4D6"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "3DE98BBB620BA42B"
-					item: {
-						count: 1
-						id: "farmersdelight:bacon_and_eggs"
-					}
-					type: "item"
-				}
-				{
-					id: "45ED390FD97FD984"
-					item: {
-						count: 1
-						id: "cobblemon:rare_candy"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				action: "defeat"
-				amount: 10L
-				biome: ""
-				dex_progress: "seen"
-				dimension: ""
-				form: ""
-				gender: ""
-				id: "43D0F17E5BF32F2E"
-				max_level: 0
-				min_level: 0
-				natures: ""
-				poke_ball_used: ""
-				pokemon: ""
-				pokemon_type: ""
-				region: ""
-				shiny: false
-				time_max: 24000L
-				time_min: 0L
-				type: "cobblemon_tasks:cobblemon_task"
-			}]
-			x: 7.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["74005CB1AF80AA78"]
-			icon: {
-				id: "cobblemon:exp_candy_xl"
-			}
-			id: "4B54929993494AE1"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "284DA8415DDA9474"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					count: 15
-					id: "411C8BCF9180F881"
-					item: {
-						count: 1
-						id: "farmersdelight:bacon_and_eggs"
-					}
-					type: "item"
-				}
-				{
-					icon: {
-						id: "cobblemon:relic_coin_pouch"
-					}
-					id: "422BF1ED73B3F522"
-					table_id: 5140535383181042102L
-					type: "random"
-				}
-				{
-					id: "51AA8E02F2DB0774"
-					item: {
-						count: 1
-						id: "cobblemon:rare_candy"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				action: "defeat"
-				amount: 50L
-				biome: ""
-				dex_progress: "seen"
-				dimension: ""
-				form: ""
-				gender: ""
-				id: "3D558D8609A2B264"
-				max_level: 0
-				min_level: 0
-				natures: ""
-				poke_ball_used: ""
-				pokemon: ""
-				pokemon_type: ""
-				region: ""
-				shiny: false
-				time_max: 24000L
-				time_min: 0L
-				type: "cobblemon_tasks:cobblemon_task"
-			}]
-			x: 7.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["1A0BD89EC5FB4061"]
-			id: "1EC64021BB45A3E4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "36E42952E303A015"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					count: 8
-					id: "086B2245B80D9C00"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "130C877A4CE0F087"
-				item: { count: 1, id: "luggage:luggage" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7B6EE4E7B5D9ADBB"]
-			id: "3696C5D5931C1C99"
+			id: "2E183AECA3616A3E"
 			rewards: [{
-				id: "50F05590BA5E2A18"
-				item: {
-					count: 1
-					id: "farmersdelight:honey_cookie"
-				}
-				type: "item"
+				exclude_from_claim_all: true
+				id: "33D46AB2A7DA9426"
+				table_id: 8730146850461836545L
+				type: "choice"
 			}]
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
-				id: "75503AE3BCDB424D"
-				item: { count: 1, id: "cobblemonboxlink:box_link" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 4.5d
-		}
-		{
-			id: "2AA4E046D4FEEB6B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5643DCC8C0DC965A"
-					table_id: 361710125783850309L
-					type: "loot"
-				}
-				{
-					id: "66844851D94BAA9C"
-					item: {
-						count: 1
-						id: "cobblemon:revival_herb"
-					}
-					type: "item"
-				}
-				{
-					id: "7DA78CD2CBAC7AD1"
-					item: {
-						count: 1
-						id: "farmersdelight:ham"
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "11BC848F4DF972C3"
-					item: { count: 1, id: "minecraft:brush" }
-					type: "item"
-				}
-				{
-					id: "5841B92A0B863B4C"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemon:fossils)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-			]
-			x: 0.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["2AA4E046D4FEEB6B"]
-			id: "4923D2E3695FF1E9"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6E4AB7B3DE89B260"
-					table_id: 361710125783850309L
-					type: "loot"
-				}
-				{
-					id: "164C12F40EE1C4D3"
-					item: {
-						count: 1
-						id: "cobblemon:revive"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "6EDB91B9497FE260"
-					item: {
-						count: 1
-						id: "cobblemon:ancient_poke_ball"
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "669B02D6C60F88F7"
-					item: { count: 1, id: "cobblemon:restoration_tank" }
-					type: "item"
-				}
-				{
-					id: "439BBD44F19CB18A"
-					item: { count: 1, id: "cobblemon:fossil_analyzer" }
-					type: "item"
-				}
-				{
-					id: "420B5A4DDBEF2D45"
-					item: { count: 1, id: "cobblemon:monitor" }
-					type: "item"
-				}
-				{
-					advancement: "cobblemon:resurrect_pokemon"
-					criterion: ""
-					icon: {
-						id: "cobblemon:old_amber_fossil"
-					}
-					id: "35BDBAD8E8A0FBA1"
-					type: "advancement"
-				}
-			]
-			x: 0.5d
-			y: 6.5d
-		}
-		{
-			id: "2D4A7835804303CD"
-			rewards: [{
-				id: "4432D599F5428560"
-				item: {
-					components: {
-						"ftbquests:loot_crate": "sleeping_box"
-					}
-					count: 1
-					id: "ftbquests:lootcrate"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				action: "evolve"
+				action: "select_starter"
 				amount: 1L
 				biome: ""
 				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
-				id: "75D35550F26E6056"
+				id: "3386D31CE2068800"
 				max_level: 0
 				min_level: 0
 				natures: ""
@@ -1427,211 +79,107 @@
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: 0.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["2E183AECA3616A3E"]
 			icon: {
-				id: "minecraft:filled_map"
+				id: "cobblemon:rare_candy"
 			}
-			id: "16590A163DE81B93"
-			optional: true
-			rewards: [{
-				command: "/loot give @p loot cobblemoneternal:quest/village_map"
-				icon: {
-					id: "minecraft:filled_map"
-				}
-				id: "5129193851DDE4ED"
-				type: "command"
-			}]
-			shape: "octagon"
+			id: "12ED80AE92EF00F6"
+			size: 1.5d
 			tasks: [{
-				consume_items: true
-				count: 4L
-				id: "34852A19D0EBA5B3"
-				item: { count: 1, id: "minecraft:diamond" }
+				id: "6E1A77E68093D12F"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E183AECA3616A3E"]
+			dependency_requirement: "one_completed"
+			icon: {
+				id: "cobblemonraiddens:raid_crystal_block"
+			}
+			id: "5508B485D7F17C47"
+			size: 1.5d
+			tasks: [{
+				id: "52F13142CCEBDD74"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5508B485D7F17C47"
+				"12ED80AE92EF00F6"
+			]
+			icon: {
+				id: "cobblemon:master_ball"
+			}
+			id: "0E793B5774CA8FEB"
+			rewards: [{
+				id: "085AB5C7AB529CA5"
+				item: {
+					count: 1
+					id: "cobblemon:rare_candy"
+				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.5d
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "6CCFDFF02E196249"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 10.0d
 		}
 		{
-			id: "51288160F6FCC03F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "092DDBA5A37C2B54"
-					table_id: 7892144193402168857L
-					type: "random"
-				}
-				{
-					count: 3
-					id: "57A8B54B6ABA03AE"
-					item: {
-						count: 1
-						id: "cobblemon:poke_ball"
-					}
-					type: "item"
-				}
-				{
-					id: "47957FEA6DE2D542"
-					item: {
-						count: 1
-						id: "cobblemon:max_revive"
-					}
-					type: "item"
-				}
-			]
+			dependencies: ["12ED80AE92EF00F6"]
+			icon: {
+				id: "cobblemon:quick_ball"
+			}
+			id: "09FD9E2B8D7FC163"
+			size: 1.0d
 			tasks: [{
-				id: "70E05B56C53BE036"
+				id: "6688782D2D450063"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["12ED80AE92EF00F6"]
+			id: "2671D8838B41056C"
+			tasks: [{
+				id: "71E0392CB5299504"
 				item: { count: 1, id: "explorerscompass:explorerscompass" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.5d
+			x: -2.0d
+			y: 7.0d
 		}
 		{
-			dependencies: ["5987F4BEB3B4EE16"]
-			id: "006A5458E074E9F8"
-			rewards: [
+			dependencies: ["2E183AECA3616A3E"]
+			hide_dependency_lines: true
+			id: "4A7F13432636AD72"
+			size: 1.0d
+			tasks: [
 				{
-					count: 3
-					id: "7B2DB1284753289D"
-					item: {
-						count: 1
-						id: "cobblemon:poke_ball"
-					}
+					id: "1DA8D5DB2A38A6C5"
+					item: { count: 1, id: "bonded:repair_bench" }
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "035A36B59D9243CE"
-					table_id: 5140535383181042102L
-					type: "random"
-				}
-			]
-			tasks: [{
-				id: "7BF116275FB90FE1"
-				item: { count: 1, id: "simpletms:machine_tm" }
-				type: "item"
-			}]
-			x: -2.5d
-			y: 1.5d
-		}
-		{
-			icon: {
-				components: {
-					"ftbquests:icon": "cobblemon:textures/entity_icon/0666_vivillon/vivillon_ocean_shiny.png"
-				}
-				id: "ftbquests:custom_icon"
-			}
-			id: "336C03C8DAFE8B53"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3B5700555342679E"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "5377F86E5314538C"
-					item: {
-						count: 1
-						id: "rctmod:trainer_card"
-					}
+					id: "337D363377558C88"
+					item: { count: 1, id: "bonded:tool_bench" }
 					type: "item"
 				}
 			]
-			tasks: [{
-				action: "defeat"
-				amount: 1L
-				biome: ""
-				dex_progress: "seen"
-				dimension: ""
-				form: ""
-				gender: ""
-				id: "72A88FA9002C698B"
-				max_level: 0
-				min_level: 0
-				natures: ""
-				poke_ball_used: ""
-				pokemon: ""
-				pokemon_type: ""
-				region: ""
-				shiny: false
-				time_max: 24000L
-				time_min: 0L
-				type: "cobblemon_tasks:cobblemon_task"
-			}]
-			x: 3.0d
-			y: 3.0d
-		}
-		{
-			id: "7E3FA7BE238DCACD"
-			rewards: [
-				{
-					count: 5
-					id: "76C0828B5E37AD4E"
-					item: {
-						count: 1
-						id: "cobblemon:ancient_ultra_ball"
-					}
-					type: "item"
-				}
-				{
-					id: "1D8866EBAEF434E0"
-					item: {
-						count: 1
-						id: "cobblemon:rare_candy"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				icon: {
-					id: "cobblemontrialsedition:cobblemon_trial_spawner"
-				}
-				id: "22BA27431C2ED33C"
-				observe_type: 0
-				timer: 40L
-				to_observe: "cobblemontrialsedition:cobblemon_trial_spawner"
-				type: "observation"
-			}]
-			x: 6.5d
-			y: 3.5d
-		}
-		{
-			id: "4917971A892C9CFA"
-			rewards: [
-				{
-					id: "3602B6F4DB7CBDED"
-					item: {
-						count: 1
-						id: "cobblemon:max_elixir"
-					}
-					type: "item"
-				}
-				{
-					count: 6
-					id: "46D4324C8DD8D6E0"
-					item: {
-						count: 1
-						id: "cobblemon:premier_ball"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				icon: {
-					id: "cobblemonraiddens:raid_crystal_block"
-				}
-				id: "018AE23E88E6E828"
-				observe_type: 0
-				timer: 60L
-				to_observe: "cobblemonraiddens:raid_crystal_block"
-				type: "observation"
-			}]
-			x: 1.0d
-			y: 3.0d
+			x: 2.0d
+			y: 6.0d
 		}
 	]
 }
