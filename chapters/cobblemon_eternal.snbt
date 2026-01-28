@@ -1,0 +1,185 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cobblemon_eternal"
+	group: ""
+	icon: {
+		id: "cobblemon:poke_ball"
+	}
+	id: "1DF598887604D25D"
+	images: [
+		{
+			height: 2.7d
+			image: "kubejs:textures/cobblemon_eternal_title.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "cobblemon:item/held_items/exp_share"
+			rotation: -45.0d
+			width: 1.0d
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			height: 2.0d
+			image: "cobblemon:textures/entity_icon/0151_mew/mew.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			height: 2.0d
+			image: "cobblemon:textures/entity_icon/0155_cyndaquil/cyndaquil_shiny.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -3.5d
+			y: 2.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "cobblemon:poke_ball"
+			}
+			id: "2E183AECA3616A3E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33D46AB2A7DA9426"
+				table_id: 8730146850461836545L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				action: "select_starter"
+				amount: 1L
+				biome: ""
+				dex_progress: "seen"
+				dimension: ""
+				form: ""
+				gender: ""
+				id: "3386D31CE2068800"
+				max_level: 0
+				min_level: 0
+				natures: ""
+				poke_ball_used: ""
+				pokemon: ""
+				pokemon_type: ""
+				region: ""
+				shiny: false
+				time_max: 24000L
+				time_min: 0L
+				type: "cobblemon_tasks:cobblemon_task"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E183AECA3616A3E"]
+			icon: {
+				id: "cobblemon:rare_candy"
+			}
+			id: "12ED80AE92EF00F6"
+			size: 1.5d
+			tasks: [{
+				id: "6E1A77E68093D12F"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2E183AECA3616A3E"]
+			dependency_requirement: "one_completed"
+			icon: {
+				id: "cobblemonraiddens:raid_crystal_block"
+			}
+			id: "5508B485D7F17C47"
+			size: 1.5d
+			tasks: [{
+				id: "52F13142CCEBDD74"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5508B485D7F17C47"
+				"12ED80AE92EF00F6"
+			]
+			icon: {
+				id: "cobblemon:master_ball"
+			}
+			id: "0E793B5774CA8FEB"
+			rewards: [{
+				id: "085AB5C7AB529CA5"
+				item: {
+					count: 1
+					id: "cobblemon:rare_candy"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "6CCFDFF02E196249"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["12ED80AE92EF00F6"]
+			icon: {
+				id: "cobblemon:quick_ball"
+			}
+			id: "09FD9E2B8D7FC163"
+			size: 1.0d
+			tasks: [{
+				id: "6688782D2D450063"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["12ED80AE92EF00F6"]
+			id: "2671D8838B41056C"
+			tasks: [{
+				id: "71E0392CB5299504"
+				item: { count: 1, id: "explorerscompass:explorerscompass" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2E183AECA3616A3E"]
+			hide_dependency_lines: true
+			id: "4A7F13432636AD72"
+			size: 1.0d
+			tasks: [
+				{
+					id: "1DA8D5DB2A38A6C5"
+					item: { count: 1, id: "bonded:repair_bench" }
+					type: "item"
+				}
+				{
+					id: "337D363377558C88"
+					item: { count: 1, id: "bonded:tool_bench" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 6.0d
+		}
+	]
+}
