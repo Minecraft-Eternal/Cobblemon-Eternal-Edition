@@ -1,0 +1,13 @@
+{
+  "familyRates": {
+    "SAND": 1.0,
+    "CAVE": 1.0,
+    "FLYING": 0.25,
+    "SNOW": 1.0,
+    "LEAVES": 0.7,
+    "GRASS": 1.0,
+    "SOULFLAME": 1.0,
+    "WATER": 1.0,
+    "NETHERFLAMME": 0.6
+  }
+}

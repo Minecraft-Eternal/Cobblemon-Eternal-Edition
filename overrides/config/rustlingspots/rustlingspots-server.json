@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "enable_logging": false,
+  "min_distance_between_spots": 20,
+  "spot_lifetime_ticks": 6000,
+  "interaction_radius": 2.0,
+  "interaction_vertical_allowance": 3.0,
+  "player_spot_radius": 200,
+  "max_spots_per_player": 8,
+  "max_spots_total": 64,
+  "allow_cobblemon_raid_den_dimensions": true,
+  "shiny_spot_chance": 0.0025,
+  "announce_shiny_finds_globally": true,
+  "enable_empty_spots": true,
+  "empty_spot_chance": 0.02
+}

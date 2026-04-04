@@ -1,0 +1,8 @@
+{
+  "enable": true,
+  "encounter_chance": 0.35,
+  "default_shiny_chance": 0.001,
+  "min_level": 5,
+  "max_level": 75,
+  "typed_spawn_rules": true
+}
