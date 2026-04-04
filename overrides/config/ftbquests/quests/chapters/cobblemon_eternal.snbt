@@ -4,14 +4,24 @@
 	filename: "cobblemon_eternal"
 	group: ""
 	id: "1DF598887604D25D"
-	images: [{
-		height: 2.7d
-		image: "kubejs:textures/cobblemon_eternal_title.png"
-		rotation: 0.0d
-		width: 9.0d
-		x: 2.0d
-		y: -1.0d
-	}]
+	images: [
+		{
+			height: 2.7d
+			image: "kubejs:textures/cobblemon_eternal_title.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			height: 2.5d
+			image: "cobblemon:textures/gui/pokedex/platform_base.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 2.0d
+			y: 1.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -1054,24 +1064,32 @@
 				}
 			]
 			tasks: [{
+				abilities: ""
 				action: "catch"
 				amount: 10L
+				aspects: ""
 				biome: ""
 				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
+				held_items: ""
 				id: "3DA23BFEA2CDD1E9"
 				max_level: 0
+				max_turns: 0
 				min_level: 0
+				moves: ""
 				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
+				raid_tiers: ""
 				region: ""
 				shiny: false
+				targetPlayer: ""
 				time_max: 24000L
 				time_min: 0L
+				trainers: ""
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: -3.5d
@@ -1108,24 +1126,32 @@
 				}
 			]
 			tasks: [{
+				abilities: ""
 				action: "catch"
 				amount: 50L
+				aspects: ""
 				biome: ""
 				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
+				held_items: ""
 				id: "489BD304A4EC94D6"
 				max_level: 0
+				max_turns: 0
 				min_level: 0
+				moves: ""
 				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
+				raid_tiers: ""
 				region: ""
 				shiny: false
+				targetPlayer: ""
 				time_max: 24000L
 				time_min: 0L
+				trainers: ""
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: -3.5d
@@ -1161,24 +1187,32 @@
 				}
 			]
 			tasks: [{
+				abilities: ""
 				action: "defeat"
 				amount: 10L
+				aspects: ""
 				biome: ""
 				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
+				held_items: ""
 				id: "43D0F17E5BF32F2E"
 				max_level: 0
+				max_turns: 0
 				min_level: 0
+				moves: ""
 				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
+				raid_tiers: ""
 				region: ""
 				shiny: false
+				targetPlayer: ""
 				time_max: 24000L
 				time_min: 0L
+				trainers: ""
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: 7.5d
@@ -1224,24 +1258,32 @@
 				}
 			]
 			tasks: [{
+				abilities: ""
 				action: "defeat"
 				amount: 50L
+				aspects: ""
 				biome: ""
 				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
+				held_items: ""
 				id: "3D558D8609A2B264"
 				max_level: 0
+				max_turns: 0
 				min_level: 0
+				moves: ""
 				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
+				raid_tiers: ""
 				region: ""
 				shiny: false
+				targetPlayer: ""
 				time_max: 24000L
 				time_min: 0L
+				trainers: ""
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: 7.5d
@@ -1406,24 +1448,32 @@
 				type: "item"
 			}]
 			tasks: [{
+				abilities: ""
 				action: "evolve"
 				amount: 1L
+				aspects: ""
 				biome: ""
 				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
+				held_items: ""
 				id: "75D35550F26E6056"
 				max_level: 0
+				max_turns: 0
 				min_level: 0
+				moves: ""
 				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
+				raid_tiers: ""
 				region: ""
 				shiny: false
+				targetPlayer: ""
 				time_max: 24000L
 				time_min: 0L
+				trainers: ""
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: 0.0d
@@ -1542,24 +1592,32 @@
 				}
 			]
 			tasks: [{
+				abilities: ""
 				action: "defeat"
 				amount: 1L
+				aspects: ""
 				biome: ""
 				dex_progress: "seen"
 				dimension: ""
 				form: ""
 				gender: ""
+				held_items: ""
 				id: "72A88FA9002C698B"
 				max_level: 0
+				max_turns: 0
 				min_level: 0
+				moves: ""
 				natures: ""
 				poke_ball_used: ""
 				pokemon: ""
 				pokemon_type: ""
+				raid_tiers: ""
 				region: ""
 				shiny: false
+				targetPlayer: ""
 				time_max: 24000L
 				time_min: 0L
+				trainers: ""
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
 			x: 3.0d
