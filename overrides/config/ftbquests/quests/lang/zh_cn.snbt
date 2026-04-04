@@ -1,214 +1,23 @@
 {
 	chapter.031093E825061AE5.title: "挑战"
-	chapter.0E1F8A4BFA26DD78.title: "战斗"
 	chapter.16A7BCF860211CB6.title: "末地"
 	chapter.1DF598887604D25D.title: "说明"
 	chapter.3190B10C12FAB4F7.title: "农耕与树果"
 	file.0000000000000001.title: "永恒的宝可梦任务"
-	quest.012E4D991A81408A.quest_subtitle: "合成一个&e大师球宝可梦钓竿"
-	quest.012E4D991A81408A.title: "垂钓大师"
-	quest.0271FC09CF404434.quest_desc: [
-		"&e薄荷叶&r可用于合成&d薄荷&r，薄荷能轻微改变你的宝可梦的能力。"
-		"薄荷可将&d宝可梦的性格效果&r替换为薄荷自身的效果。"
-		""
-		"&l大部分&r薄荷由4片薄荷叶制成，3片同一颜色的以及1片不同的。&1那片单一的薄荷决定着降低的能力&r，&c另三片决定着增加的能力&r。"
-	]
-	quest.0271FC09CF404434.quest_subtitle: "获得一片&e薄荷叶"
-	quest.0271FC09CF404434.title: "Authentically Minted"
 	quest.02DF45F7DA8311BB.quest_subtitle: "可在箱子中找到"
-	quest.09BD5BE582E54F69.quest_desc: [
-		"本项目目前正在开发中。"
-		"感谢游玩并加入我们的旅途！"
-		""
-		"- 玩得开心！"
-		""
-		""
-		"&e小贴士：&r小心训练家！"
-		"&6提示：&r按下“&l{key.cobblemon.throwpartypokemon}&r”键（默认为&lB&r）即可与目标开始战斗！"
-	]
-	quest.09BD5BE582E54F69.quest_subtitle: "安装整合包"
-	quest.09BD5BE582E54F69.title: "&5欢迎游玩永恒的宝可梦！"
 	quest.09DC8D9E9F0EAD08.quest_subtitle: "找到一个&e疗草"
-	quest.116F1AFF9B138FEE.quest_desc: [
-		"宝可导航是多年研究和科学发现的结晶。"
-		""
-		"它包含着本地和地区宝可梦的信息。"
-		"这个设备能帮助你更轻松地&o把它们全收服！"
-		""
-		"&d注意：&r小心卑鄙的火箭队！他们也很想拥有这种高科技……"
-	]
-	quest.116F1AFF9B138FEE.quest_subtitle: "合成一个&e宝可导航"
-	quest.116F1AFF9B138FEE.title: "宝可导航"
 	quest.13103EBD0B4D3497.quest_subtitle: "&e守卫者&r的掉落物"
-	quest.15CADD4029E11471.quest_desc: [
-		"&e宝可梦钓竿&r可用于找到那些海底的宝可梦！"
-		""
-		"&e小贴士：&r你可以把精灵球放到钓竿上以获取其效果！"
-	]
-	quest.15CADD4029E11471.quest_subtitle: "合成一把&e宝可梦钓竿"
-	quest.15CADD4029E11471.title: "宝可梦钓竿"
-	quest.16590A163DE81B93.quest_subtitle: "买一张到&6最近的村庄&r的地图。"
-	quest.16590A163DE81B93.title: "{cobblemoneternal.village_map}"
-	quest.1A0BD89EC5FB4061.quest_desc: ["更多物品栏空间，嘿嘿！"]
-	quest.1A0BD89EC5FB4061.quest_subtitle: "合成一个&e背包"
-	quest.1A0BD89EC5FB4061.title: "背包"
-	quest.1A99838DE8E97CE2.quest_desc: ["睡觉时，受伤的宝可梦会恢复些许生命。"]
-	quest.1A99838DE8E97CE2.quest_subtitle: "合成一张&e床"
-	quest.1A99838DE8E97CE2.title: "小憩一会吧！"
 	quest.1B2300A535829DA2.quest_subtitle: "&e可在箱子中找到"
 	quest.1B6CCB38C4549D44.quest_subtitle: "&e下界铁掌&r的掉落物"
-	quest.21FBFEDDB954BC62.quest_desc: [
-		"你需要一个徽章盒以收集所有的道馆馆主徽章！"
-		""
-		"&5徽章尚未完成"
-	]
-	quest.21FBFEDDB954BC62.quest_subtitle: "合成一个&e徽章盒"
 	quest.25CC1866C4B2CD98.quest_subtitle: "&e高位唤魔者&r的掉落物"
-	quest.26383FB3CB75BF13.quest_desc: ["飞艇可用于长途旅行！真正的工程奇迹！"]
-	quest.26383FB3CB75BF13.quest_subtitle: "制造一艘&e飞艇"
-	quest.276FBA28044EB55F.quest_desc: ["建筑小帮手使建造变得更加轻松！"]
-	quest.276FBA28044EB55F.quest_subtitle: "合成一个&e建筑小帮手"
 	quest.28A4438BD0A75AF1.quest_subtitle: "可在箱子中找到"
-	quest.2A4E2FB2F9EB344D.quest_subtitle: "合成一个&e精灵球"
-	quest.2A4E2FB2F9EB344D.title: "便携捕捉设备"
-	quest.2AA4E046D4FEEB6B.quest_desc: [
-		"世界的各种群系中有小型挖掘场，在其中可以找到&e化石&r。"
-		""
-		"每种挖掘场都&o&l会&r包含&d一个特别的化石&r，但是小概率包含其他化石。"
-		""
-		"&e小贴士：&r细心点！挖掘场几乎总是与周围环境融为一体！"
-	]
-	quest.2AA4E046D4FEEB6B.quest_subtitle: "发掘一个&e化石"
-	quest.2AA4E046D4FEEB6B.title: "考古与化石"
 	quest.2B29B428A013E04D.quest_subtitle: "&e凋灵的掉落物&r"
-	quest.2BB19CFF6357DB5C.quest_subtitle: "捕捉&d10只&r宝可梦"
-	quest.2D5377E10B83CCBA.quest_subtitle: "合成一个&e高级球"
-	quest.2D5377E10B83CCBA.title: "极强便携捕捉设备"
-	quest.2E6C061FCAC0007A.quest_subtitle: "合成一个&e大师球"
-	quest.2E6C061FCAC0007A.title: "超级便携捕捉设备"
-	quest.30EB65CF8CA493DF.quest_desc: [
-		"传送石碑作为一种快速旅行的方法，可以链接到其他传送石碑。"
-		"只需与传送石碑交互即可了解。"
-		""
-		"&e小贴士：&r使用传送石碑将会消耗一小点经验！"
-	]
-	quest.30EB65CF8CA493DF.quest_subtitle: "合成一个&e传送石碑"
-	quest.30EB65CF8CA493DF.title: "传送石碑"
-	quest.34CDB13B95A6C649.quest_desc: [
-		"双翼飞机快速灵活，是远途旅行的绝佳方式。"
-		""
-		"&e小贴士：&r逃跑时也可以用！"
-	]
-	quest.34CDB13B95A6C649.quest_subtitle: "合成一个&e双翼机"
-	quest.3696C5D5931C1C99.quest_desc: [
-		"&6箱链&r可用于随时随地访问电脑，按下“&l{key.cobblemonboxlink.open_pc.desc}&r”键&l（默认为\\\\）&r即可使用。"
-		""
-		"&e小贴士：&r你可以将箱链放到“&l箱链&r”饰品栏，并使用按键绑定访问电脑！"
-	]
-	quest.3696C5D5931C1C99.quest_subtitle: "合成一个&e箱链"
-	quest.3FE970CC80B586EB.quest_subtitle: "WIP"
-	quest.46A2507A373FA4E7.quest_desc: ["闪光宝可梦极其稀有。祝你好运！"]
-	quest.46A2507A373FA4E7.quest_subtitle: "捕获一只&e&o闪光宝可梦"
-	quest.4923D2E3695FF1E9.quest_desc: [
-		"&e化石复原机&r可以利用化石中的DNA使已灭绝的物种复活。"
-		""
-		"&l介绍：&r"
-		"- 将必要的化石放入&e化石分析仪&r中。"
-		"- 向&e复原培养皿&r中加满生物材料。"
-		"- 让机器&c运行半个游戏日&r。"
-		"- 用&d任意精灵球&r提取复活的标本。"
-		""
-		"&l注意：&r化石&3&l龙&r，化石&3&l海兽&r，化石&6&o鱼&r，化石&6&o鸟&r必须结合到一起。"
-		"&3&l前两个中的一个&r与&6&o后两个中的一个&r结合到一个可制造出标本。"
-		""
-		"&e小贴士：&r稀有目标可以提供更多的生物材料。"
-		""
-		" &7&o复生&r"
-	]
-	quest.4923D2E3695FF1E9.quest_subtitle: "建造并使用一台&e化石复原机"
-	quest.4B54929993494AE1.quest_subtitle: "击败&d50位&r宝可梦或训练家"
-	quest.4B54929993494AE1.title: "宝可梦间的角斗"
-	quest.4BD6632DFCF9F496.quest_subtitle: "捕获&d50只&r宝可梦"
 	quest.521C904D81C4C47F.quest_subtitle: "可在箱子中找到"
-	quest.532FBFE98329A7D6.quest_desc: ["与宝可梦战斗至其濒临死亡时，使用&e精灵球&r捕获它们吧！"]
-	quest.532FBFE98329A7D6.quest_subtitle: "捕获第一只宝可梦！"
-	quest.532FBFE98329A7D6.title: "总得有个起点！"
-	quest.58C0C01C3A5DE34D.quest_desc: [
-		"永恒的宝可梦的战斗中有额外的一些特色，使你与怪物战斗的时候更有趣，更刺激！"
-		""
-		"1）手持剑&d右击&r以格挡"
-		"2）按下&dR&r以&e战斗翻滚&r"
-		"3）&d潜行&r可以使你隐匿，在&e隐匿&r状态下可以对敌人造成额外伤害"
-		"4）弓对敌人的&e爆头&r攻击可以造成额外伤害"
-		"5）每把武器都有特殊的攻击动画！"
-	]
-	quest.58C0C01C3A5DE34D.quest_subtitle: "学会战斗！"
-	quest.58C0C01C3A5DE34D.title: "&6&l战斗！&r &e——&e教程任务"
 	quest.58C366173DE6C049.quest_subtitle: "&e虚空之花&r的掉落物"
-	quest.5987F4BEB3B4EE16.quest_desc: [
-		"&e空白招式记录&r可用于教授方块宝可梦无法自然学习的招式。"
-		""
-		"对&c从精灵球中出来的&r宝可梦使用空白招式记录，你就可以把它的招式记录在招式记录中！"
-		"对其他的东西使用空白招式记录，你可以选择你队伍中的宝可梦以记录招式。"
-		""
-		"&6提示：&r然后你可以&d对宝可梦使用招式记录使其习得对应的招式&r。"
-	]
-	quest.5987F4BEB3B4EE16.quest_subtitle: "合成一个&e空白招式记录"
-	quest.5987F4BEB3B4EE16.title: "学会招式！"
-	quest.5EAC27E2738426EF.quest_subtitle: "合成一个&e超级球"
-	quest.5EAC27E2738426EF.title: "增强便携捕捉设备"
-	quest.608565C4FF22309C.quest_desc: [
-		"&e宝可追踪仪&r是一款与&d宝可导航仪&r联动的探测宝可梦装置。"
-		""
-		"手持时会在屏幕右下角显示小地图，通过光点标记附近区域的宝可梦位置。"
-		""
-		"该设备支持&d特定宝可梦种类筛选&r功能。要想设置追踪目标，可以打开宝可导航仪界面，选择需要定位的宝可梦种类，&6点击底部中央的追踪按钮&r即可启动定向追踪。"
-	]
-	quest.608565C4FF22309C.quest_subtitle: "合成一个&e宝可追踪仪"
-	quest.608565C4FF22309C.title: "宝可追踪仪"
 	quest.614DB0C276BB8929.quest_subtitle: "&e暗夜巫妖&r的掉落物"
-	quest.648B23380CEF3226.quest_desc: [
-		"方块商人用方块币交换有用的物资和物品。"
-		""
-		"你可以通过在战斗中击败&4训练家&r来获得&b方块币&r！"
-		""
-		"&e小贴士：&r偶尔你可以在村庄中找到方块商人。"
-		"&6提示：&r在村民旁边放置&d展示柜&r可以改变他们的"
-		"职业。"
-		""
-		"{image:cobbledollars:textures/gui/cobbledollars_background.png width:100 height:25 align:center}"
-	]
-	quest.648B23380CEF3226.quest_subtitle: "找到一位&3方块商人"
-	quest.648B23380CEF3226.title: "购物时间到！"
-	quest.6A954B946EFFC175.quest_desc: [
-		"Ball Replacer可用于改变存储宝可梦的精灵球。"
-		""
-		"&6提示：&r这在&d华丽大赛&r很有用"
-		""
-		"&oOw"
-	]
-	quest.6A954B946EFFC175.quest_subtitle: "合成一个&eBall Replacer"
 	quest.6C42808582684B4D.quest_subtitle: "可在箱子中找到"
 	quest.6D903BA3CC21CD05.quest_subtitle: "&e女巫&r的掉落物"
-	quest.74005CB1AF80AA78.quest_subtitle: "击败&d10位&r宝可梦或训练家"
-	quest.74005CB1AF80AA78.title: "宝可梦对战"
-	quest.7601DD3E65B378B4.quest_desc: ["充能站接收燃料，为建筑小帮手等充能工具提供能量！"]
-	quest.7601DD3E65B378B4.quest_subtitle: "合成一个&e充能站"
 	quest.76C573F56E45E7E3.quest_subtitle: "&e死者之王&r的掉落物"
-	quest.7B6EE4E7B5D9ADBB.quest_desc: [
-		"电脑用于存储宝可梦！"
-		"别担心，&o它们也喜欢在这里待着！"
-		""
-		"&6提示：&r把你看到的每一只宝可梦都捕获！如果有一天你们分开，它们可能会&d送给你礼物&r。"
-	]
-	quest.7B6EE4E7B5D9ADBB.quest_subtitle: "合成一台&e电脑"
-	quest.7C9078DABA6430B6.quest_desc: [
-		"治疗仪可用于快速治疗你队伍每只宝可梦！"
-		""
-		"&e小贴士：&r可以与护士村民交易一些有用的物品，可以在村庄中的宝可梦中心找到他们！"
-	]
-	quest.7C9078DABA6430B6.quest_subtitle: "在&6村庄&r中找到一台&e治疗仪&r"
-	quest.7C9078DABA6430B6.title: "&3治疗时间！"
 	quest.7D98D24F126DBB3B.quest_subtitle: "可在箱子中找到"
 	reward.0019487E9BA5725C.title: "&e整合包设置"
 	reward.163A6CB8F046F7B8.title: "&e整合包设置"
