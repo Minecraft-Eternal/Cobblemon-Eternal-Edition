@@ -1,8 +1,19 @@
 {
-  "MinCaptureHPThreshold": 0.6,
-  "BonusCatchRate": 0.0,
-  "AllowMasterBall": true,
-  "AllowOriginBall": true,
-  "AllowQuickBall": true,
-  "AllowSafariBall": true
+  "BeforePokemonBattle": {
+    "MinHPForBattle": 1.0
+  },
+  "InPokemonBattle": {
+    "MinHPForCapture": 0.5,
+    "BonusCatchRate": 0.0,
+    "AllowMasterBall": true,
+    "AllowOriginBall": true,
+    "AllowQuickBall": true,
+    "AllowSafariBall": true
+  },
+  "General": {
+    "WorldBlacklist": [],
+    "DimensionBlacklist": [],
+    "PokemonBlacklist": [],
+    "PokemonWhitelist": []
+  }
 }
