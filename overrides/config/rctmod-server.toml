@@ -117,7 +117,7 @@
 	#for the first trainer of a series (you may use 'relativeLevelCap' for that).
 	# Default: 15
 	# Range: 1 ~ 2147483646
-	initialLevelCap = 30
+	initialLevelCap = 15
 	#━━━━━━━━━━
 	#If enabled the level cap of a players will not prevent their pokemon from gaining experience and leveling up.
 	allowOverLeveling = false
@@ -126,13 +126,13 @@
 	#required trainer in a series. The relativeLevelCap is added to the resulting value. For
 	#instance if the next trainer for a player has a Pikachu at level 50, that players level
 	#cap will be 50 + relativeLevelCap (can be negative).
-	relativeLevelCap = 0
+	relativeLevelCap = 3
 	#━━━━━━━━━━
 	#The initial series players are placed in when entering a world for the first time. Apart from any series id
 	#this value may also be set to one of the special series ids "empty" (i.e. no series) or "freeroam".
 	#Note that when setting the initial series to "freeroam" it is usually a good idea to also disable
 	#'freeroamRequiresCompletedSeries'.
-	initialSeries = "empty"
+	initialSeries = "radicalred"
 	#━━━━━━━━━━
 	#The freeroam series will grant a level cap of 100 and allows players to pause the progression of their
 	#current series. If this option is enabled, players must have completed any other series first to gain
