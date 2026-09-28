@@ -3,6 +3,12 @@
 	default_quest_shape: ""
 	filename: "cobblemon_eternal"
 	group: ""
+	icon: {
+		components: {
+			"ftbquests:icon": "relics:item/magic_mirror_0"
+		}
+		id: "ftbquests:custom_icon"
+	}
 	id: "1DF598887604D25D"
 	images: [
 		{
@@ -21,6 +27,14 @@
 			x: 2.0d
 			y: 1.5d
 		}
+		{
+			height: 0.8d
+			image: "cobblemon:item/evolution/love_sweet"
+			rotation: 0.0d
+			width: 0.8d
+			x: 5.833333333333329d
+			y: -0.12738095238096747d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -33,7 +47,7 @@
 					id: "18A0A697181888D8"
 					item: {
 						count: 1
-						id: "cobblemon:poke_ball"
+						id: "cobblemon:premier_ball"
 					}
 					type: "item"
 				}
@@ -71,8 +85,8 @@
 				to_observe: "cobblemon:healing_machine"
 				type: "observation"
 			}]
-			x: -1.5d
-			y: 3.0d
+			x: -3.5d
+			y: 1.5d
 		}
 		{
 			id: "15CADD4029E11471"
@@ -190,14 +204,6 @@
 					}
 					type: "item"
 				}
-				{
-					id: "5387A9BEFA61DA32"
-					item: {
-						count: 1
-						id: "simpletms:tr_icepunch"
-					}
-					type: "item"
-				}
 			]
 			tasks: [{
 				id: "427B9293037DDACE"
@@ -243,14 +249,6 @@
 					item: {
 						count: 1
 						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-				{
-					id: "098B804E1D6CCD4A"
-					item: {
-						count: 1
-						id: "simpletms:tr_thunderpunch"
 					}
 					type: "item"
 				}
@@ -310,14 +308,6 @@
 					item: {
 						count: 1
 						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-				{
-					id: "1CAA2A64B95A4398"
-					item: {
-						count: 1
-						id: "simpletms:tr_shadowball"
 					}
 					type: "item"
 				}
@@ -467,20 +457,11 @@
 			id: "1A0BD89EC5FB4061"
 			rewards: [
 				{
-					count: 8
+					count: 3
 					id: "7DB34C0581C2991F"
 					item: {
 						count: 1
-						id: "cobblemon:poke_ball"
-					}
-					type: "item"
-				}
-				{
-					count: 2
-					id: "564DF038F0AFC7C2"
-					item: {
-						count: 1
-						id: "cobblemon:revive"
+						id: "cobblemon:premier_ball"
 					}
 					type: "item"
 				}
@@ -509,6 +490,12 @@
 			y: 1.5d
 		}
 		{
+			icon: {
+				components: {
+					"ftbquests:icon": "cobblemon:item/poke_balls/premier_ball"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "532FBFE98329A7D6"
 			rewards: [
 				{
@@ -527,16 +514,23 @@
 				}
 			]
 			shape: "hexagon"
+			size: 1.3d
 			tasks: [{
 				advancement: "cobblemon:first_catch"
 				criterion: ""
 				id: "4CB9166594EE3C43"
 				type: "advancement"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: 2.000000000000007d
+			y: 3.3249999999999957d
 		}
 		{
+			icon: {
+				components: {
+					"ftbquests:icon": "relics:textures/abilities/bunny_hoppers/hold.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "46A2507A373FA4E7"
 			rewards: [
 				{
@@ -566,6 +560,15 @@
 					}
 					type: "item"
 				}
+				{
+					count: 8
+					id: "2FECE28850036E7A"
+					item: {
+						count: 1
+						id: "cobblemon:heal_ball"
+					}
+					type: "item"
+				}
 			]
 			shape: "octagon"
 			tasks: [{
@@ -576,42 +579,6 @@
 			}]
 			x: 2.0d
 			y: 10.5d
-		}
-		{
-			dependencies: ["7C9078DABA6430B6"]
-			id: "5987F4BEB3B4EE16"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7F17C303D9BE1A9A"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "47B84B88E2C65E02"
-					item: {
-						count: 1
-						id: "cobblemon:twisted_spoon"
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "09C42C1F208E0BA1"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "3288887B6B4358AC"
-				item: { count: 1, id: "simpletms:tr_blank" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 1.5d
 		}
 		{
 			id: "648B23380CEF3226"
@@ -932,71 +899,6 @@
 			y: 6.5d
 		}
 		{
-			id: "116F1AFF9B138FEE"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "74198E983258EC66"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					count: 3
-					id: "26B5D40F075D801B"
-					item: {
-						count: 1
-						id: "farmersdelight:fried_egg"
-					}
-					type: "item"
-				}
-				{
-					auto: "invisible"
-					command: "/execute at @p run rctmod trainer summon team_rocket_admin_0220 ~7 ~ ~"
-					icon: {
-						id: "badgebox:poison_badge"
-					}
-					id: "6837BCBB4D56FF46"
-					permission_level: 2
-					silent: true
-					type: "command"
-				}
-			]
-			tasks: [{
-				id: "25C8B95D77CD0CA6"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblenav:pokenav)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: -3.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["116F1AFF9B138FEE"]
-			id: "608565C4FF22309C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7B92BD17DB4BA0CF"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "3C32907EA66E911E"
-					item: {
-						count: 1
-						id: "farmersdelight:bacon_and_eggs"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "3FB41F264A9DA37E"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cobblemoneternal:pokefinder)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: -3.5d
-			y: 1.5d
-		}
-		{
 			id: "21FBFEDDB954BC62"
 			tasks: [{
 				id: "48AD5660F7C27B2E"
@@ -1045,14 +947,6 @@
 					id: "1EC22FBE5AA767DD"
 					table_id: 7200463765304942840L
 					type: "loot"
-				}
-				{
-					icon: {
-						id: "cobblemon:relic_coin_pouch"
-					}
-					id: "1B28391BC62CA21B"
-					table_id: 5140535383181042102L
-					type: "random"
 				}
 				{
 					id: "7641A1A4BE65062C"
@@ -1107,14 +1001,6 @@
 					id: "157A27FF2C6727E1"
 					table_id: 7200463765304942840L
 					type: "choice"
-				}
-				{
-					icon: {
-						id: "cobblemon:relic_coin_pouch"
-					}
-					id: "322FFB1300DB5530"
-					table_id: 5140535383181042102L
-					type: "random"
 				}
 				{
 					id: "3DAA1D6B5C00ED02"
@@ -1239,14 +1125,6 @@
 						id: "farmersdelight:bacon_and_eggs"
 					}
 					type: "item"
-				}
-				{
-					icon: {
-						id: "cobblemon:relic_coin_pouch"
-					}
-					id: "422BF1ED73B3F522"
-					table_id: 5140535383181042102L
-					type: "random"
 				}
 				{
 					id: "51AA8E02F2DB0774"
@@ -1436,17 +1314,28 @@
 		}
 		{
 			id: "2D4A7835804303CD"
-			rewards: [{
-				id: "4432D599F5428560"
-				item: {
-					components: {
-						"ftbquests:loot_crate": "sleeping_box"
+			rewards: [
+				{
+					id: "4432D599F5428560"
+					item: {
+						components: {
+							"ftbquests:loot_crate": "sleeping_box"
+						}
+						count: 1
+						id: "ftbquests:lootcrate"
 					}
-					count: 1
-					id: "ftbquests:lootcrate"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 3
+					id: "05125EAFFA6CEBC3"
+					item: {
+						count: 1
+						id: "cobblemon:premier_ball"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				abilities: ""
 				action: "evolve"
@@ -1501,8 +1390,8 @@
 				item: { count: 1, id: "minecraft:diamond" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			id: "51288160F6FCC03F"
@@ -1518,7 +1407,7 @@
 					id: "57A8B54B6ABA03AE"
 					item: {
 						count: 1
-						id: "cobblemon:poke_ball"
+						id: "cobblemon:premier_ball"
 					}
 					type: "item"
 				}
@@ -1540,37 +1429,9 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["5987F4BEB3B4EE16"]
-			id: "006A5458E074E9F8"
-			rewards: [
-				{
-					count: 3
-					id: "7B2DB1284753289D"
-					item: {
-						count: 1
-						id: "cobblemon:poke_ball"
-					}
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "035A36B59D9243CE"
-					table_id: 5140535383181042102L
-					type: "random"
-				}
-			]
-			tasks: [{
-				id: "7BF116275FB90FE1"
-				item: { count: 1, id: "simpletms:machine_tm" }
-				type: "item"
-			}]
-			x: -2.5d
-			y: 1.5d
-		}
-		{
 			icon: {
 				components: {
-					"ftbquests:icon": "cobblemon:textures/entity_icon/0666_vivillon/vivillon_ocean_shiny.png"
+					"ftbquests:icon": "cobble_contests:item/contest_card"
 				}
 				id: "ftbquests:custom_icon"
 			}
@@ -1587,6 +1448,15 @@
 					item: {
 						count: 1
 						id: "rctmod:trainer_card"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "62310445E218CC18"
+					item: {
+						count: 1
+						id: "cobblemon:premier_ball"
 					}
 					type: "item"
 				}
@@ -1620,26 +1490,26 @@
 				trainers: ""
 				type: "cobblemon_tasks:cobblemon_task"
 			}]
-			x: 3.0d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
 			id: "7E3FA7BE238DCACD"
 			rewards: [
 				{
-					count: 5
-					id: "76C0828B5E37AD4E"
-					item: {
-						count: 1
-						id: "cobblemon:ancient_ultra_ball"
-					}
-					type: "item"
-				}
-				{
 					id: "1D8866EBAEF434E0"
 					item: {
 						count: 1
 						id: "cobblemon:rare_candy"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1711E633BA8E7D84"
+					item: {
+						count: 1
+						id: "cobblemon:premier_ball"
 					}
 					type: "item"
 				}
@@ -1688,8 +1558,8 @@
 				to_observe: "cobblemonraiddens:raid_crystal_block"
 				type: "observation"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: -1.5d
+			y: 1.5d
 		}
 	]
 }
