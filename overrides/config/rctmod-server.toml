@@ -143,6 +143,9 @@
 	#━━━━━━━━━━
 	#If enabled additional information are printed to the log whenever a trainer spawns or despawns.
 	logSpawning = true
+	#━━━━━━━━━━
+	#If enabled additional information are printed to the log whenever a trainer repel rod is registered or unregistered.
+	logRepelRods = false
 
 [Trainers]
 	#━━━━━━━━━━
@@ -167,7 +170,9 @@
 	# Default: 16
 	# Range: 0 ~ 2147483646
 	forceBattleMaxLevelDiff = 16
-
-
-
-
+	#━━━━━━━━━━
+	#If enabled trainer messages are displayed as speech bubbles above their head.
+	showMessagesAsSpeechBubble = false
+	#━━━━━━━━━━
+	#If enabled trainer messages are displayed in the chat.
+	showMessagesInChat = true
