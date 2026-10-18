@@ -592,7 +592,10 @@
 				{
 					command: "/cobbledollars give @p 100"
 					icon: {
-						id: "cobble_contests:contest_card"
+						components: {
+							"ftbquests:missing_item": "cobble_contests:contest_card"
+						}
+						id: "ftbquests:missing_item"
 					}
 					id: "3CE2CD054F14D962"
 					permission_level: 2
@@ -903,34 +906,6 @@
 			tasks: [{
 				id: "48AD5660F7C27B2E"
 				item: { count: 1, id: "badgebox:badgesbox" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["21FBFEDDB954BC62"]
-			hide_until_deps_complete: true
-			id: "6A954B946EFFC175"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6C8456236A5F3B08"
-					table_id: 7200463765304942840L
-					type: "choice"
-				}
-				{
-					id: "781B7FABCBF94CC6"
-					item: {
-						count: 1
-						id: "farmersdelight:egg_sandwich"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "7F80CBD8D364120E"
-				item: { count: 1, id: "cobble_contests:ball_swapper" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -1430,10 +1405,7 @@
 		}
 		{
 			icon: {
-				components: {
-					"ftbquests:icon": "cobble_contests:item/contest_card"
-				}
-				id: "ftbquests:custom_icon"
+				id: "cobblemon:choice_band"
 			}
 			id: "336C03C8DAFE8B53"
 			rewards: [
